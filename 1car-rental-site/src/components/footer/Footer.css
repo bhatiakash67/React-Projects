@@ -1,0 +1,95 @@
+footer {
+    /* position: fixed; */
+    bottom: 0;
+}
+
+.footer-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 480px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ .footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links{
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 452px;
+}
+
+.site-links{
+    margin-top: 80px;
+}
+
+.text {
+    margin-top: 16px;
+    color: #131313;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.site-links ul li {
+    font-size: 16px;
+    margin-top: 18px;
+}
+
+.site-links ul li:hover {
+    text-decoration: underline;
+}
+
+#list3{
+    margin-right: 60px;
+}
+
+.underline {
+    height: 2px;
+    background-color: #131313;
+    margin-top: 36px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    margin-bottom: 60px;
+}
+
+.copyright {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 60px;
+
+}
+
+.terms {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 60px;
+    list-style: none;
+}
+
+.conditions-and-terms{
+    margin-left: 60px;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}

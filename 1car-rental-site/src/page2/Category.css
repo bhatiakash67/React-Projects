@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+  }
+
+.carcategory-contentwrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content-box {
+    display: flex;
+    flex-direction: row;
+    height: 1600px;
+    width: 1440px;
+    margin-top: 2px;
+}
+
+/* Checklist filter styling */
+
+.filter-for-cars {
+    background-color: white;
+    width: 360px;
+    height: 1600px;
+}
+
+.type-of-car, .car-capacity, .price-range{
+    margin-left: 32px;
+}
+
+.type-of-car{
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    width: 176px;
+    height: 352px;
+}
+
+.checklist-header{
+    font-size: 12px;
+    color: #90A3BF;
+}
+
+.type-design{
+    display: flex;
+    flex-direction: row;
+}
+
+.checks{
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    gap: 32px;
+}
+
+.check-size{
+    width: 24px;
+    height: 24px;
+}
+
+.check-size input{
+    border: 100px solid black;
+}
+
+.types{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 8px;
+    height: 24px;
+}
+
+.type{
+    font-size: 20px;
+    color: #596780;
+}
+
+#second-type, #third-type, #fourth-type, #fifth-type, #sixth-type{
+    margin-top: 26px;
+} 
+
+.quantity-of-cars{
+    color: #90A3BF;
+}
+
+.capacity-space{
+    display: flex;
+    flex-direction: row;
+}
+
+.car-capacity, .price-range{
+    margin-top: 56px;
+}
+
+.car-capacity{
+    width: 176px;
+    height: 240px;
+}
+
+.capacities{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-left: 8px;
+    height: 24px;
+}
+
+.capacity{
+    font-size: 20px;
+    color: #596780;
+}
+
+#second-capacity, #third-capacity, #fourth-capacity{
+    margin-top: 26px;
+} 
+
+.price-range{
+    width: 296px;
+    height: 104px;
+}
+
+.price-space{
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.bar{
+    color: #3563E9;
+    width: 296px;
+    height: 20px;
+}
+
+.max-price-limit-range{
+    font-size: 20px;
+    color: #596780;
+}
+
+.placeholder-for-currency{
+    margin-top: 12px;
+    font-size: 20px;
+    color: #596780;
+}
+
+.car-catalog {
+    width: 1080px;
+    background-color: #F6F7F9; 
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container2{
+    display: flex;
+    position: relative;
+}
+
+.pickup-container2, .dropoff-container2 {
+    border-radius: 10px;
+    margin-top: 32px;
+    margin-bottom: 36px;
+    height: 132px;
+    width: 486px;
+    background-color: white;
+    position: relative;
+}
+
+.pickup-container2 {
+    margin-left: 64px;
+    margin-right: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.swapbtn2 {
+    width: 180px;
+    height: 180px;
+    margin-top: 70px;
+    position: absolute;
+    margin-left: 8px;
+    right: 482px;
+    top: -20px;
+}
+
+.dropoff-container2 {
+    display: flex;
+    margin-left: 44px;
+    flex-direction: column;
+    margin-right: 64px;
+}
+
+.boxheader2 {
+    margin-left: 24px;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.location-date-time2{
+    margin-top: 16px;
+}
+
+.input-headers2{
+    width: 438px;
+    height: 48px;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 48px; */
+}
+
+.location-header2, .date-header2, .time-header2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A202C;
+}
+
+.locations2, .date-input2, .time-input2{
+    width: 134px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+.car-cards-catalog {
+    height: 1228px;
+    width: 1015px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    margin-left: 32px;
+}
+
+.car-card-level1, .car-card-level2, .car-card-level3  {
+    height: 388px;
+    width: 1015px;
+}
+
+.carcards2{
+    display: flex;
+    justify-content: space-between;
+    width: 1015px;
+}
+
+.car12, .car22, .car32{
+    width: 317px;
+    background-color: white;
+}
+
+.car12, .car22, .car32{
+    transition: background-color 0.3s ease;
+}
+
+.car12:hover{
+    background-color: #E0E9F4;
+}
+
+.car22:hover{
+    background-color: #E0E9F4;
+}
+
+.car32:hover{
+    background-color: #E0E9F4;
+}
+
+
+.carbrand-part2, .carspecs2, .rate-and-buttontorent2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.carbrand-part2 {
+    position: relative;
+}
+
+.car-brand2{
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heart2 {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 104px;
+}
+
+.car-type2 {
+    margin-left: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #90A3BF;
+}
+
+.car-cardimage2 {
+    width: 232px;
+    height: 72px;
+    margin-top: 64px;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.carspecs2 {
+    height: 24px;
+    width: 256px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 64px;
+}
+
+.gas-station2, .wheel2, .noofseats2 {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+}
+
+.fuel2, .driving2, .occupancy2 {
+    font-size: 14px;
+    color: #90A3BF;
+}
+
+.wheel2 {
+    margin-left: 16px;
+}
+
+.driving2 {
+    margin-right: 16px;
+}
+
+.rate-and-buttontorent2 {
+    margin: 24px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.rentbutton2 {
+    height: 44px;
+    width: 116px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+.rentbutton2:hover{
+    transform: scale(1.03);
+}
+
+.car-card-level2 {
+margin-top: 32px;
+}
+
+.car-card-level3 {
+    margin-top: 32px;
+}
+
+.expand-cars-catalog{
+    display: flex;
+    flex-direction: row;
+}
+
+#catalog-opener{
+    width: 156px;
+    height: 44px;
+    margin-left: 462px;
+    margin-top: 64px;
+    width: 156px;
+    height: 44px;
+    cursor: pointer;
+}
+
+#catalog-opener:hover{
+    transform: scale(1.03);
+}
+
+#catalog-car-count{
+    margin-top: 74px;
+    font-size: 14px;
+    color: #90A3BF;
+    margin-left: 290px;
+    margin-right: 32px;
+    width: 140px;
+    height: 24px;
+}
+
+@media (max-width: 990px){
+    .filter-for-cars{
+        display: none;
+        width: 0;
+    }
+    .main-container2{
+        display: none;
+    }
+    .car-card-level1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

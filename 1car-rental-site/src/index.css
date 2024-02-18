@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --darkerblue-color: #0A196F;
+    --darkblue-color: #102587;
+    --lightblue-color: #658DF1;
+    --light300blue-color: #85A8F8;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+

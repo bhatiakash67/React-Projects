@@ -1,0 +1,552 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.car-form-contentwrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.forms-for-application {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F6F7F9;
+    padding-left: 32px;
+    height: 2240px;
+}
+
+.billing-info-part {
+    width: 852px;
+    height: 2176px;
+}
+
+.billing-details {
+    width: 852px;
+    height: 336px;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.bill-header {
+    padding-top: 24px;
+    padding-left: 24px;
+}
+
+.titles {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A202C;
+}
+
+.instructions {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.instruction-part {
+    font-size: 14px;
+    color: #90A3BF;
+    margin-top: 4px;
+}
+
+.stepcount {
+    font-size: 14px;
+    color: #90A3BF;
+}
+
+.first-input-line,
+.second-input-line {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.pickup-drop-off {
+    margin-top: 22px;
+    margin-left: 24px;
+}
+
+.pickup-part {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A202C;
+}
+
+.first-input-line {
+    margin-top: 22px;
+}
+
+.input-parts {
+    width: 386px;
+    height: 92px;
+}
+
+.input-header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A202C;
+}
+
+.input-fields {
+    width: 386px;
+    height: 56px;
+    margin-top: 16px;
+    border-radius: 10px;
+    background-color: #F6F7F9;
+    padding-left: 15px;
+    padding-right: 20px;
+    appearance: none;
+}
+
+.second-input-line {
+    margin-top: 24px;
+}
+
+/* Rental section */
+
+.rental-info {
+    margin-top: 24px;
+    width: 852px;
+    height: 664px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Not working */
+/* 
+.arrowdown input{
+    background-image: url("");
+} */
+
+/* Payment Styles */
+
+.payment-method {
+    margin-top: 24px;
+    width: 852px;
+    height: 596px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.credit-card {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.creditcard-section {
+    background-color: #F6F7F9;
+    border-radius: 10px;
+    width: 804px;
+    height: 308px;
+}
+
+.credit-card-header-and-image {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.radio-and-radioheader {
+    display: flex;
+}
+
+.firstline {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#radio {
+    margin-right: 8px;
+    margin-top: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+#card-radio {
+    margin-left: 0;
+    font-size: 16px;
+    color: #1A202C;
+    margin-top: 24px;
+}
+
+#visa-visa {
+    width: 92px;
+    height: 20px;
+    margin-top: 24px;
+}
+
+.creditcard-first-input-line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.creditcard-input-header {
+    font-size: 16px;
+    color: #1A202C;
+    font-weight: bolder;
+}
+
+.creditcard-input-fields {
+    margin-top: 16px;
+    width: 362px;
+    height: 56px;
+    padding-left: 15px;
+}
+
+.creditcard-second-input-line {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 24px;
+}
+
+.paypal,
+.bitcoin {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F6F7F9;
+    width: 804px;
+    height: 56px;
+    border-radius: 10px;
+}
+
+.paypal {
+    margin-top: 24px;
+}
+
+.bitcoin {
+    margin-right: 24px;
+    margin-top: 24px;
+}
+
+.paypalradio-and-radio-header,
+.bitcoinradio-and-radio-header {
+    display: flex;
+}
+
+#radio-for-bitcoin,
+#radio-for-paypal {
+    width: 24px;
+    height: 24px;
+    margin-top: 16px;
+    margin-left: 32px;
+}
+
+#bitcoin-text,
+#paypal-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A202C;
+    margin-top: 16px;
+    margin-left: 20px;
+
+}
+
+.payment-photos {
+    width: 94px;
+    height: 20px;
+    margin-top: 16px;
+    margin-right: 32px;
+}
+
+/* Confirmation section */
+
+.confirmation {
+    margin-top: 24px;
+    width: 852px;
+    height: 484px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+.aggrements {
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.aggrement1,
+.aggrement2 {
+    display: flex;
+    width: 804px;
+    height: 56px;
+    background-color: #F6F7F9;
+    border-radius: 10px;
+}
+
+.aggrement1 {
+    margin-top: 32px;
+}
+
+.aggrement2 {
+    margin-top: 24px;
+}
+
+.check-for-aggrement {
+    width: 24px;
+    height: 24px;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.aggrement-content {
+    margin-top: 16px;
+    margin-left: 20px;
+}
+
+#rent-button-for-aggrement {
+    margin-top: 32px;
+    margin-left: 24px;
+}
+
+#rent-button-aggrement{
+    width: 140px;
+    height: 56px;
+    border-radius: 10px;
+}
+
+#rent-button-aggrement:hover {
+    transform: scale(1.03);
+}
+
+.data-surety {
+    margin-top: 32px;
+    margin-left: 24px;
+}
+
+#shield-img {
+    width: 32px;
+    height: 32px;
+}
+
+#data-header {
+    font-size: 16px;
+    color: #1A202C;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+#data-safety-info {
+    font-size: 14px;
+    color: #90A3BF;
+    margin-top: 8px;
+}
+
+/* Rent Summary */
+
+.rental-summary {
+    margin-top: 25px;
+    margin-right: 32px;
+    height: 560px;
+    width: 492px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.rental-summary-header {
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#rental-summary-header-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A202C;
+}
+
+#price-disclamer {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #90A3BF;
+}
+
+.image-and-name-with-reviews {
+    display: flex;
+}
+
+#car-final-view {
+    margin-left: 24px;
+    margin-top: 32px;
+    width: 132px;
+    height: 108px;
+    border-radius: 8px;
+}
+
+.name-with-ratings {
+    margin-top: 50px;
+    margin-left: 16px;
+}
+
+#review-count-star {
+    display: flex;
+}
+
+#car-id {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1A202C;
+    margin-bottom: 8px;
+}
+
+#no-of-reviews {
+    font-size: 14px;
+    color: #596780;
+    margin-left: 8px;
+}
+
+#underline {
+    width: 444px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 32px;
+    height: 2px;
+    background-color: #C3D4E9;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.header {
+    font-size: 16px;
+    color: #90A3BF;
+}
+
+.amount {
+    font-size: 16px;
+    color: #1A202C;
+    font-weight: bold;
+}
+
+#finalamount {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.coupon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.coupon-space {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 32px;
+    position: relative;
+    display: inline-block;
+}
+
+#coupon-input {
+    width: 444px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #F6F7F9;
+    padding-left: 32px;
+    position: relative;
+}
+
+#rentalpriceconfirm {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#totalprice-final {
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1A202C;
+}
+
+#rateinfo {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #90A3BF;
+}
+
+#rate-confirm {
+    margin-top: 32px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1A202C;
+}
+
+#submit-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    /* Adjust the right position as needed */
+    transform: translateY(-50%);
+}
+
+#btntext:hover{
+    color: #C3D4E9;
+} 
+
+#btntext:active{
+    color: #3563E9;
+} 
+
+#btntext {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 16px;
+}
+
+#popupMessage-space {
+    margin: 0 auto;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+} 
+
+#popupMessage {
+    opacity: 1;
+    z-index: 11;
+    padding: 25px 15px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #3563E9;
+    color: white;
+}
+
+@media (max-width: 990px) {
+    .forms-for-application {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

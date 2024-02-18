@@ -1,0 +1,424 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+  }
+
+.content-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #F6F7F9; 
+}
+
+/* Location with time and date CSS */
+
+.ads {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: transparent;  
+    margin-top: 14px;
+}
+
+.ad1, .ad2 {
+    height: 360px;
+    width: 640px;
+    margin-top: 32px;
+}
+
+.ad1 {
+    background-color: #54A6FF;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 64px;
+} 
+
+.ad2{
+    background-color: #3563E9;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    margin-right: 68px;
+}
+
+.adheader, .adcontent, .adbutton {
+    margin-left: 24px;
+}
+
+.adheader {
+    margin-top: 24px;
+}
+
+.adcontent {
+    margin-top: 16px;
+}
+
+.adbutton {
+    width: 120px;
+    height: 44px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #3563E9;
+    border-radius: 4px;
+}
+
+.adbutton:hover{
+    transform: scale(1.03);
+}
+
+#btn2 {
+    background-color: #54A6FF;
+}
+
+#btn2:hover{
+    transform: scale(1.03);
+}
+
+.ad-image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    margin-top: 234px;
+    width: 408px;
+    height: 116px;
+}
+
+#form-first-page {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main-container{
+    display: flex;
+}
+
+.pickup-container, .dropoff-container {
+    border-radius: 10px;
+    margin-top: 32px;
+    margin-bottom: 36px;
+    height: 132px;
+    width: 582px;
+    background-color: white;
+    z-index: 0;
+    position: relative;
+}
+
+.pickup-container {
+    margin-left: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin-right: 148px;
+}
+
+.swapbtn {
+    right: 588px;
+    top: -10px;
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.dropoff-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 64px;
+}
+
+.boxheader {
+    margin-left: 48px;
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+.location-date-time{
+    margin-top: 16px;
+}
+
+.input-headers{
+    width: 486px;
+    height: 20px;
+    margin-right: 48px;
+    margin-left: 48px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.location-header, .date-header, .time-header{
+    font-size: 16px;
+    font-weight: bold;
+    color: #1A202C;
+}
+
+.locations, .date-input, .time-input{
+    width: 134px;
+    height: 20px;
+    margin-top: 8px;
+}
+
+/* Car cards CSS */
+
+.car-card {
+    max-width: 1312px;
+    height: 1356px;
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.popular-cars {
+    margin-bottom: 32px;
+}
+
+.popularcar-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popularcar-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#popularcar-title-text {
+    margin-left: 20px;
+    font-size: 16;
+    color: #90A3BF;
+}
+
+#popularcar-title-link {
+    margin-right: 20px;
+    color: #3563E9;
+}
+
+.carcards {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 388px;
+    max-width: 1312px;
+}
+
+.car1, .car2, .car3, .car4 {
+    width: 304px;
+    height: 388px;
+    background-color: white;
+}
+
+.car1 {
+    display: flex;
+    flex-direction: column;
+}
+
+ .car1, .car2, .car3, .car4{
+    transition: background-color 0.3s ease;
+} 
+
+ .car4:hover{
+    background-color: #E0E9F4;
+} 
+
+.carbrand-part, .carspecs, .rate-and-buttontorent {
+    display: flex;
+    flex-direction: row;
+}
+
+.carbrand-part {
+    position: relative;
+}
+
+.car-brand{
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heart {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 104px;
+}
+
+.car-type {
+    margin-left: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #90A3BF;
+}
+
+.car-cardimage {
+    width: 232px;
+    height: 72px;
+    margin-top: 64px;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.carspecs {
+    height: 24px;
+    width: 256px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 64px;
+}
+
+.gas-station, .wheel, .noofseats {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+}
+
+.fuel, .driving, .occupancy {
+    font-size: 14px;
+    color: #90A3BF;
+}
+
+.wheel {
+    margin-left: 16px;
+}
+
+.driving {
+    margin-right: 16px;
+}
+
+.rate-and-buttontorent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 24px 24px;
+}
+
+.rate {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.rentbutton {
+    height: 44px;
+    width: 116px;
+    margin-left: 24px;
+}
+
+.rentbutton:hover{
+    transform: scale(1.03);
+}
+
+/* Recommended Cars CSS */
+
+.rmd-cars {
+    max-width: 1312px;
+    height: 872px;
+}
+
+.rmdcars-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.rmdcar-title {
+    font-size: 16px;
+    color: #90A3BF;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.fullcars {
+    display: flex;
+    margin-right: 64px;
+}
+
+.showcars {
+    height: 44px;
+    width: 156px;
+    margin-left: 642px;
+    margin-top: 74px;
+    margin-bottom: 64px;
+}
+
+.showcars:hover{
+    transform: scale(1.03);
+}
+
+.carcount {
+    font-size: 14px;
+    color: #90A3BF;
+    margin-left: 438px;
+    margin-bottom: 74px;
+    margin-top: 74px;
+}
+
+@media (max-width: 1412){
+    .ads{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 990px){
+
+.ads{
+    display: none;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pickup-container, .dropoff-container{
+position: relative;
+height: 120px;
+}
+
+.dropoff-container{
+    margin-left: 65px;
+}
+
+.swapbtn{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 300px;
+    top: 88px;
+}
+
+
+ /* form{
+    width: 100%;
+    display: flex;
+ } */
+
+.popular-cars{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+ .carcards{
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .car2, .car3, .car4, .car5{
+    margin-top: 10px;
+ } 
+}
