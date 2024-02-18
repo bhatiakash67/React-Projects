@@ -12,7 +12,9 @@ Explore our user-friendly car rental service built with Vite and React JS. Effor
 - **CSS**: For a sleek and visually appealing design.
 - Employed **JSX** for writing the components and enhancing code readability.
 
+## Screenshots
 
+<img src="./Website.gif" alt="App Screenshot" width="300" height="500">
 
 ## React Features in the Project
 
@@ -52,4 +54,3 @@ Explore our user-friendly car rental service built with Vite and React JS. Effor
 
  - [Picko Lab](https://www.figma.com/@pickolabstudio)
  - [Figma](https://www.figma.com/design/)
-
