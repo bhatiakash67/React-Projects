@@ -1,30 +1,32 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 body {
     scroll-behavior: smooth;
-  }
+}
 
 .content-wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    background-color: #F6F7F9; 
+    background-color: #F6F7F9;
 }
 
 /* Location with time and date CSS */
 
 .ads {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border: transparent;  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
+    gap: 20px;
+    border: transparent;
     margin-top: 14px;
+    margin-left: 64px;
 }
 
-.ad1, .ad2 {
+.ad1,
+.ad2 {
     height: 360px;
-    width: 640px;
+    width: 90%;
     margin-top: 32px;
 }
 
@@ -33,18 +35,20 @@ body {
     color: white;
     border-radius: 10px;
     position: relative;
-    margin-left: 64px;
-} 
+    margin-left: 0;
+}
 
-.ad2{
+.ad2 {
     background-color: #3563E9;
     color: white;
     border-radius: 10px;
     position: relative;
-    margin-right: 68px;
+    margin-right: 0;
 }
 
-.adheader, .adcontent, .adbutton {
+.adheader,
+.adcontent,
+.adbutton {
     margin-left: 24px;
 }
 
@@ -65,7 +69,7 @@ body {
     border-radius: 4px;
 }
 
-.adbutton:hover{
+.adbutton:hover {
     transform: scale(1.03);
 }
 
@@ -73,7 +77,7 @@ body {
     background-color: #54A6FF;
 }
 
-#btn2:hover{
+#btn2:hover {
     transform: scale(1.03);
 }
 
@@ -94,31 +98,34 @@ body {
     position: relative;
 }
 
-.main-container{
+.main-container {
     display: flex;
+    position: relative;
+    gap: 140px;
 }
 
-.pickup-container, .dropoff-container {
+.pickup-container,
+.dropoff-container {
     border-radius: 10px;
     margin-top: 32px;
     margin-bottom: 36px;
     height: 132px;
-    width: 582px;
+    width: 100%;
     background-color: white;
     z-index: 0;
     position: relative;
 }
 
 .pickup-container {
-    margin-left: 64px;
+    margin-left: 0;
     display: flex;
     flex-direction: column;
     align-items: space-between;
-    margin-right: 148px;
+    margin-right: 0;
 }
 
 .swapbtn {
-    right: 588px;
+    right: 40%;
     top: -10px;
     z-index: 1;
     width: 200px;
@@ -130,7 +137,7 @@ body {
 .dropoff-container {
     display: flex;
     flex-direction: column;
-    margin-right: 64px;
+    margin-right: 0;
 }
 
 .boxheader {
@@ -139,11 +146,11 @@ body {
     font-size: 16px;
 }
 
-.location-date-time{
+.location-date-time {
     margin-top: 16px;
 }
 
-.input-headers{
+.input-headers {
     width: 486px;
     height: 20px;
     margin-right: 48px;
@@ -154,13 +161,17 @@ body {
     gap: 48px;
 }
 
-.location-header, .date-header, .time-header{
+.location-header,
+.date-header,
+.time-header {
     font-size: 16px;
     font-weight: bold;
     color: #1A202C;
 }
 
-.locations, .date-input, .time-input{
+.locations,
+.date-input,
+.time-input {
     width: 134px;
     height: 20px;
     margin-top: 8px;
@@ -170,7 +181,7 @@ body {
 
 .car-card {
     max-width: 1312px;
-    height: 1356px;
+    height: auto;
     margin-left: 64px;
     margin-right: 64px;
 }
@@ -180,8 +191,8 @@ body {
 }
 
 .popularcar-header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
 
 .popularcar-title {
@@ -202,32 +213,34 @@ body {
 
 .carcards {
     margin-top: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    height: 388px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+    gap: 20px;
     max-width: 1312px;
 }
 
-.car1, .car2, .car3, .car4 {
-    width: 304px;
+.car1,
+.car2,
+.car3,
+.car4 {
+    width: 100%;
     height: 388px;
     background-color: white;
+    transition: background-color 0.3s ease;
 }
 
 .car1 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
- .car1, .car2, .car3, .car4{
-    transition: background-color 0.3s ease;
-} 
-
- .car4:hover{
+.car4:hover {
     background-color: #E0E9F4;
-} 
+}
 
-.carbrand-part, .carspecs, .rate-and-buttontorent {
+.carbrand-part,
+.carspecs,
+.rate-and-buttontorent {
     display: flex;
     flex-direction: row;
 }
@@ -236,7 +249,7 @@ body {
     position: relative;
 }
 
-.car-brand{
+.car-brand {
     margin-left: 24px;
     margin-top: 24px;
     margin-bottom: 4px;
@@ -276,13 +289,17 @@ body {
     margin-top: 64px;
 }
 
-.gas-station, .wheel, .noofseats {
+.gas-station,
+.wheel,
+.noofseats {
     width: 24px;
     height: 24px;
     margin-right: 6px;
 }
 
-.fuel, .driving, .occupancy {
+.fuel,
+.driving,
+.occupancy {
     font-size: 14px;
     color: #90A3BF;
 }
@@ -299,7 +316,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 24px 24px;
+    margin: 24px;
 }
 
 .rate {
@@ -314,7 +331,7 @@ body {
     margin-left: 24px;
 }
 
-.rentbutton:hover{
+.rentbutton:hover {
     transform: scale(1.03);
 }
 
@@ -322,11 +339,11 @@ body {
 
 .rmd-cars {
     max-width: 1312px;
-    height: 872px;
+    height: auto;
 }
 
 .rmdcars-header {
-    display: flex;
+    display: grid;
     margin-bottom: 20px;
 }
 
@@ -339,8 +356,9 @@ body {
 }
 
 .fullcars {
-    display: flex;
-    margin-right: 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+    gap: 290px;
 }
 
 .showcars {
@@ -351,7 +369,7 @@ body {
     margin-bottom: 64px;
 }
 
-.showcars:hover{
+.showcars:hover {
     transform: scale(1.03);
 }
 
@@ -363,62 +381,50 @@ body {
     margin-top: 74px;
 }
 
-@media (max-width: 1412){
-    .ads{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@media screen and (max-width: 1300px) {
+
+    .content-wrapper {
+        margin: 0 auto;
     }
-}
 
-@media (max-width: 990px){
+    .ads {
 
-.ads{
-    display: none;
-}
+        display: none;
+    }
 
-.main-container{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
+    .main-container {
+        display: grid;
+        grid-template-areas:
+            'pickup'
+            'swapbtn'
+            'dropoff';
+        gap: 20px;
+    }
 
-.pickup-container, .dropoff-container{
-position: relative;
-height: 120px;
-}
+    .pickup-container,
+    .dropoff-container,
+    .swapbtn {
+        height: 132px;
+        width: 100%;
+    }
 
-.dropoff-container{
-    margin-left: 65px;
-}
+    .swapbtn {
+        left: 40%;
+        top: 22%;
+    }
 
-.swapbtn{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 300px;
-    top: 88px;
-}
+    .fullcars {
+        display: flex;
+        margin: 0;
+        gap: 0;
+    }
 
+    .showcars {
+        margin-left: 40%;
+    }
 
- /* form{
-    width: 100%;
-    display: flex;
- } */
+    .carcount {
+        margin-left: 64%;
+    }
 
-.popular-cars{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
- .carcards{
-    display: flex;
-    flex-wrap: wrap;
- }
-
- .car2, .car3, .car4, .car5{
-    margin-top: 10px;
- } 
 }

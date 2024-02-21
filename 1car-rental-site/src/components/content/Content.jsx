@@ -666,7 +666,6 @@ function Content() {
                     </div>
                 </div>
 
-
                 <div className='fullcars'>
                     <Link to="car-categories">
                         <button><img className="showcars" src={ShowMoreCars} alt="" /></button>
