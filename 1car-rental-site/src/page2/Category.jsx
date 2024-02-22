@@ -49,10 +49,8 @@ function Category() {
     }))
   }
 
-  
-
-const [isPickupDateInput, setIsPickupDateInput] = useState(false);
-const [isPickupTimeInput, setIsPickupTimeInput] = useState(false);
+  const [isPickupDateInput, setIsPickupDateInput] = useState(false);
+  const [isPickupTimeInput, setIsPickupTimeInput] = useState(false);
 
   const handlePickupDateFocus = () => {
     setIsPickupDateInput(true);
@@ -171,25 +169,19 @@ const [isPickupTimeInput, setIsPickupTimeInput] = useState(false);
 
             {/* Price range */}
             <div className="price-range">
-
               <p className='checklist-header' id='price-of-car'>PRICE</p>
-
               <div className="price-space">
-
                 <div className='bar'>
                   <input type="range" min={70} max={100} onChange={handleSliderValue} />
                 </div>
                 {sliderInteracted && (
                   <div className="range-slider">
                     <p className="max-price-limit-range"> {currency} {sliderValue}</p>
-
                   </div>
                 )}
                 <p className='placeholder-for-currency'>Max. $100.00</p>
               </div>
-
             </div>
-
           </div>
 
           {/* Car Catalog */}
@@ -318,322 +310,306 @@ const [isPickupTimeInput, setIsPickupTimeInput] = useState(false);
 
             <div className="car-cards-catalog">
 
-              <div className='car-card-level1'>
+              {/* Car Card 1 */}
+              <Link to="../car-details">
+                <div className="car12">
 
-                <div className="carcards2">
+                  <div className='carbrand-part2'>
 
-                  {/* Car Card 1 */}
-                  <Link to="../car-details">
-                    <div className="car12">
+                    <h4 className='car-brand2'>Koenigsegg</h4>
+                    <img className='heart2' src={Like1} alt="like" />
 
-                      <div className='carbrand-part2'>
+                  </div>
+                  <p className='car-type2'>Sport</p>
+                  <img className="car-cardimage2" src={Car1} alt="Car" />
 
-                        <h4 className='car-brand2'>Koenigsegg</h4>
-                        <img className='heart2' src={Like1} alt="like" />
+                  <div className="carspecs2">
 
-                      </div>
-                      <p className='car-type2'>Sport</p>
-                      <img className="car-cardimage2" src={Car1} alt="Car" />
+                    <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
+                    <p className='fuel2'>90L</p>
+                    <img className="wheel2" src={Steering} alt="Steering Wheel" />
+                    <p className='driving2'>Manual</p>
+                    <img className="noofseats2" src={Profile2} alt="2 user profiles" />
+                    <p className='occupancy2'>2 People</p>
 
-                      <div className="carspecs2">
+                  </div>
 
-                        <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
-                        <p className='fuel2'>90L</p>
-                        <img className="wheel2" src={Steering} alt="Steering Wheel" />
-                        <p className='driving2'>Manual</p>
-                        <img className="noofseats2" src={Profile2} alt="2 user profiles" />
-                        <p className='occupancy2'>2 People</p>
+                  <div className="rate-and-buttontorent2">
 
-                      </div>
+                    <p className='rate2'>$99.00/ day </p>
+                    <Link to="../register-info">
+                      <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
+                    </Link>
+                  </div>
 
-                      <div className="rate-and-buttontorent2">
-
-                        <p className='rate2'>$99.00/ day </p>
-                        <Link to="../register-info">
-                          <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
-                        </Link>
-                      </div>
-
-                    </div>
-                  </Link>
-
-                  {/* Car Card 2 */}
-                  <Link to="../car-details" >
-                    <div className="car22">
-                      <div className='carbrand-part2'>
-
-                        <h4 className='car-brand2'>Nissan GT-R</h4>
-                        <img className='heart2' src={Dislike} alt="like" />
-
-                      </div>
-                      <p className='car-type2'>Sport</p>
-                      <img className="car-cardimage2" src={Car2} alt="Car" />
-
-                      <div className="carspecs2">
-
-                        <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
-                        <p className='fuel2'>80L</p>
-                        <img className="wheel2" src={Steering} alt="Steering Wheel" />
-                        <p className='driving2'>Manual</p>
-                        <img className="noofseats2" src={Profile2} alt="2 user profiles" />
-                        <p className='occupancy2'>2 People</p>
-
-                      </div>
-
-                      <div className="rate-and-buttontorent2">
-
-                        <p className='rate2'>$80.00/ day </p>
-                        <Link to="../register-info">
-                          <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
-                        </Link>
-                      </div>
-                    </div>
-                  </Link>
-
-                  {/* Car Card 3 */}
-                  <Link to="../car-details" >
-                    <div className="car32">
-                      <div className='carbrand-part2'>
-
-                        <h4 className=' car-brand2'>Rolls - Royce</h4>
-                        <img className='heart2' src={Like1} alt="like" />
-
-                      </div>
-                      <p className='car-type2'>Sedan</p>
-                      <img className="car-cardimage2" src={Car3} alt="Car" />
-
-                      <div className="carspecs2">
-
-                        <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
-                        <p className='fuel2'>70L</p>
-                        <img className="wheel2" src={Steering} alt="Steering Wheel" />
-                        <p className='driving2'>Manual</p>
-                        <img className="noofseats2" src={Profile2} alt="2 user profiles" />
-                        <p className='occupancy2'>4 People</p>
-
-                      </div>
-
-                      <div className="rate-and-buttontorent2">
-
-                        <p className='rate2'>$96.00/ day </p>
-                        <Link to="../register-info">
-                          <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
-                        </Link>
-                      </div>
-                    </div>
-                  </Link>
                 </div>
-              </div>
+              </Link>
 
-              <div className='car-card-level2'>
+              {/* Car Card 2 */}
+              <Link to="../car-details" >
+                <div className="car22">
+                  <div className='carbrand-part2'>
 
+                    <h4 className='car-brand2'>Nissan GT-R</h4>
+                    <img className='heart2' src={Dislike} alt="like" />
 
-                <div className="carcards2">
-                  {/* Car Card 4 */}
-                  <Link to="../car-details">
-                    <div className="car12">
+                  </div>
+                  <p className='car-type2'>Sport</p>
+                  <img className="car-cardimage2" src={Car2} alt="Car" />
 
-                      <div className='carbrand-part2'>
-                        <h4 className='car-brand2'>All New Rush</h4>
-                        <img className='heart2' src={Like1} alt="like" />
-                      </div>
-                      <p className='car-type2'>SUV</p>
-                      <img className="car-cardimage2" src={Car4} alt="Car" />
+                  <div className="carspecs2">
 
-                      <div className="carspecs2">
+                    <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
+                    <p className='fuel2'>80L</p>
+                    <img className="wheel2" src={Steering} alt="Steering Wheel" />
+                    <p className='driving2'>Manual</p>
+                    <img className="noofseats2" src={Profile2} alt="2 user profiles" />
+                    <p className='occupancy2'>2 People</p>
 
-                        <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
-                        <p className='fuel2'>70L</p>
-                        <img className="wheel2" src={Steering} alt="Steering Wheel" />
-                        <p className='driving2'>Manual</p>
-                        <img className="noofseats2" src={Profile2} alt="2 user profiles" />
-                        <p className='occupancy2'>6  People</p>
+                  </div>
 
-                      </div>
+                  <div className="rate-and-buttontorent2">
 
-                      <div className="rate-and-buttontorent2">
-
-                        <p className='rate2'>$72.00/ day </p>
-                        <Link to="../register-info">
-                          <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
-                        </Link>
-                      </div>
-
-                    </div>
-                  </Link>
-
-                  {/* Car Card 5 */}
-
-                  <Link to="../car-details">
-                    <div className="car22">
-                      <div className='carbrand-part2'>
-
-                        <h4 className='car-brand2'>CR - V</h4>
-                        <img className='heart2' src={Dislike} alt="like" />
-
-                      </div>
-                      <p className='car-type2'>SUV</p>
-                      <img className="car-cardimage2" src={Car5} alt="Car" />
-
-                      <div className="carspecs2">
-
-                        <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
-                        <p className='fuel2'>80L</p>
-                        <img className="wheel2" src={Steering} alt="Steering Wheel" />
-                        <p className='driving2'>Manual</p>
-                        <img className="noofseats2" src={Profile2} alt="2 user profiles" />
-                        <p className='occupancy2'>6  People</p>
-
-                      </div>
-
-                      <div className="rate-and-buttontorent2">
-
-                        <p className='rate2'>$80.00/ day </p>
-                        <Link to="../register-info">
-                          <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
-                        </Link>
-                      </div>
-                    </div>
-                  </Link>
-
-                  {/* Car Card 6 */}
-                  <Link to="../car-details">
-                    <div className="car32">
-                      <div className='carbrand-part2'>
-
-                        <h4 className='car-brand2'>All New Terios</h4>
-                        <img className='heart2' src={Like1} alt="like" />
-
-                      </div>
-                      <p className='car-type2'>SUV</p>
-                      <img className="car-cardimage2" src={Car6} alt="Car" />
-
-                      <div className="carspecs2">
-
-                        <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
-                        <p className='fuel2'>90L</p>
-                        <img className="wheel2" src={Steering} alt="Steering Wheel" />
-                        <p className='driving2'>Manual</p>
-                        <img className="noofseats2" src={Profile2} alt="2 user profiles" />
-                        <p className='occupancy2'>6 People</p>
-
-                      </div>
-
-                      <div className="rate-and-buttontorent2">
-
-                        <p className='rate2'>$74.00/ day </p>
-                        <Link to="../register-info">
-                          <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
-                        </Link>
-                      </div>
-                    </div>
-                  </Link>
+                    <p className='rate2'>$80.00/ day </p>
+                    <Link to="../register-info">
+                      <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className='car-card-level3'>
+              {/* Car Card 3 */}
+              <Link to="../car-details" >
+                <div className="car32">
+                  <div className='carbrand-part2'>
 
-                <div className="carcards2">
-                  {/* Car Card 7 */}
-                  <Link to="../car-details" >
-                    <div className="car12">
+                    <h4 className=' car-brand2'>Rolls - Royce</h4>
+                    <img className='heart2' src={Like1} alt="like" />
 
-                      <div className='carbrand-part2'>
+                  </div>
+                  <p className='car-type2'>Sedan</p>
+                  <img className="car-cardimage2" src={Car3} alt="Car" />
 
-                        <h4 className='car-brand2'>MG ZX </h4>
-                        <img className='heart2' src={Like1} alt="like" />
+                  <div className="carspecs2">
 
-                      </div>
-                      <p className='car-type2'>Hatchback</p>
-                      <img className="car-cardimage2" src={Car8} alt="Car" />
+                    <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
+                    <p className='fuel2'>70L</p>
+                    <img className="wheel2" src={Steering} alt="Steering Wheel" />
+                    <p className='driving2'>Manual</p>
+                    <img className="noofseats2" src={Profile2} alt="2 user profiles" />
+                    <p className='occupancy2'>4 People</p>
 
-                      <div className="carspecs2">
+                  </div>
 
-                        <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
-                        <p className='fuel2'>70L</p>
-                        <img className="wheel2" src={Steering} alt="Steering Wheel" />
-                        <p className='driving2'>Manual</p>
-                        <img className="noofseats2" src={Profile2} alt="2 user profiles" />
-                        <p className='occupancy2'>4 People</p>
+                  <div className="rate-and-buttontorent2">
 
-                      </div>
-
-                      <div className="rate-and-buttontorent2">
-
-                        <p className='rate2'>$76.00/ day </p>
-                        <Link to="../register-info">
-                          <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
-                        </Link>
-                      </div>
-
-                    </div>
-                  </Link>
-                  {/* Car Card 8 */}
-                  <Link to="../car-details" >
-                    <div className="car22">
-                      <div className='carbrand-part2'>
-
-                        <h4 className='car-brand2'>New MG ZS</h4>
-                        <img className='heart2' src={Dislike} alt="like" />
-
-                      </div>
-                      <p className='car-type2'>SUV</p>
-                      <img className="car-cardimage2" src={Car9} alt="Car" />
-
-                      <div className="carspecs2">
-
-                        <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
-                        <p className='fuel2'>80L</p>
-                        <img className="wheel2" src={Steering} alt="Steering Wheel" />
-                        <p className='driving2'>Manual</p>
-                        <img className="noofseats2" src={Profile2} alt="2 user profiles" />
-                        <p className='occupancy2'>6 People</p>
-
-                      </div>
-
-                      <div className="rate-and-buttontorent2">
-
-                        <p className='rate2'>$80.00/ day </p>
-                        <Link to="../register-info">
-                          <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
-                        </Link>
-                      </div>
-                    </div>
-                  </Link>
-                  {/* Car Card 9 */}
-                  <Link to="../car-details" >
-                    <div className="car32">
-                      <div className='carbrand-part2'>
-
-                        <h4 className='car-brand2'>MG ZS Excite</h4>
-                        <img className='heart' src={Like1} alt="like" />
-
-                      </div>
-                      <p className='car-type2'>HatchBack</p>
-                      <img className="car-cardimage2" src={Car8} alt="Car" />
-
-                      <div className="carspecs2">
-
-                        <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
-                        <p className='fuel2'>90L</p>
-                        <img className="wheel2" src={Steering} alt="Steering Wheel" />
-                        <p className='driving2'>Manual</p>
-                        <img className="noofseats2" src={Profile2} alt="2 user profiles" />
-                        <p className='occupancy2'>4 People</p>
-
-                      </div>
-
-                      <div className="rate-and-buttontorent2">
-
-                        <p className='rate2'>$74.00/ day </p>
-                        <Link to="../register-info">
-                          <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
-                        </Link>
-                      </div>
-                    </div>
-                  </Link>
+                    <p className='rate2'>$96.00/ day </p>
+                    <Link to="../register-info">
+                      <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </Link>
+
+              {/* Car Card 4 */}
+              <Link to="../car-details">
+                <div className="car12">
+
+                  <div className='carbrand-part2'>
+                    <h4 className='car-brand2'>All New Rush</h4>
+                    <img className='heart2' src={Like1} alt="like" />
+                  </div>
+                  <p className='car-type2'>SUV</p>
+                  <img className="car-cardimage2" src={Car4} alt="Car" />
+
+                  <div className="carspecs2">
+
+                    <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
+                    <p className='fuel2'>70L</p>
+                    <img className="wheel2" src={Steering} alt="Steering Wheel" />
+                    <p className='driving2'>Manual</p>
+                    <img className="noofseats2" src={Profile2} alt="2 user profiles" />
+                    <p className='occupancy2'>6  People</p>
+
+                  </div>
+
+                  <div className="rate-and-buttontorent2">
+
+                    <p className='rate2'>$72.00/ day </p>
+                    <Link to="../register-info">
+                      <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
+                    </Link>
+                  </div>
+
+                </div>
+              </Link>
+
+              {/* Car Card 5 */}
+
+              <Link to="../car-details">
+                <div className="car22">
+                  <div className='carbrand-part2'>
+
+                    <h4 className='car-brand2'>CR - V</h4>
+                    <img className='heart2' src={Dislike} alt="like" />
+
+                  </div>
+                  <p className='car-type2'>SUV</p>
+                  <img className="car-cardimage2" src={Car5} alt="Car" />
+
+                  <div className="carspecs2">
+
+                    <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
+                    <p className='fuel2'>80L</p>
+                    <img className="wheel2" src={Steering} alt="Steering Wheel" />
+                    <p className='driving2'>Manual</p>
+                    <img className="noofseats2" src={Profile2} alt="2 user profiles" />
+                    <p className='occupancy2'>6  People</p>
+
+                  </div>
+
+                  <div className="rate-and-buttontorent2">
+
+                    <p className='rate2'>$80.00/ day </p>
+                    <Link to="../register-info">
+                      <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
+                    </Link>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Car Card 6 */}
+              <Link to="../car-details">
+                <div className="car32">
+                  <div className='carbrand-part2'>
+
+                    <h4 className='car-brand2'>All New Terios</h4>
+                    <img className='heart2' src={Like1} alt="like" />
+
+                  </div>
+                  <p className='car-type2'>SUV</p>
+                  <img className="car-cardimage2" src={Car6} alt="Car" />
+
+                  <div className="carspecs2">
+
+                    <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
+                    <p className='fuel2'>90L</p>
+                    <img className="wheel2" src={Steering} alt="Steering Wheel" />
+                    <p className='driving2'>Manual</p>
+                    <img className="noofseats2" src={Profile2} alt="2 user profiles" />
+                    <p className='occupancy2'>6 People</p>
+
+                  </div>
+
+                  <div className="rate-and-buttontorent2">
+
+                    <p className='rate2'>$74.00/ day </p>
+                    <Link to="../register-info">
+                      <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
+                    </Link>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Car Card 7 */}
+              <Link to="../car-details" >
+                <div className="car12">
+
+                  <div className='carbrand-part2'>
+
+                    <h4 className='car-brand2'>MG ZX </h4>
+                    <img className='heart2' src={Like1} alt="like" />
+
+                  </div>
+                  <p className='car-type2'>Hatchback</p>
+                  <img className="car-cardimage2" src={Car8} alt="Car" />
+
+                  <div className="carspecs2">
+
+                    <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
+                    <p className='fuel2'>70L</p>
+                    <img className="wheel2" src={Steering} alt="Steering Wheel" />
+                    <p className='driving2'>Manual</p>
+                    <img className="noofseats2" src={Profile2} alt="2 user profiles" />
+                    <p className='occupancy2'>4 People</p>
+
+                  </div>
+
+                  <div className="rate-and-buttontorent2">
+
+                    <p className='rate2'>$76.00/ day </p>
+                    <Link to="../register-info">
+                      <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
+                    </Link>
+                  </div>
+
+                </div>
+              </Link>
+              {/* Car Card 8 */}
+              <Link to="../car-details" >
+                <div className="car22">
+                  <div className='carbrand-part2'>
+
+                    <h4 className='car-brand2'>New MG ZS</h4>
+                    <img className='heart2' src={Dislike} alt="like" />
+
+                  </div>
+                  <p className='car-type2'>SUV</p>
+                  <img className="car-cardimage2" src={Car9} alt="Car" />
+
+                  <div className="carspecs2">
+
+                    <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
+                    <p className='fuel2'>80L</p>
+                    <img className="wheel2" src={Steering} alt="Steering Wheel" />
+                    <p className='driving2'>Manual</p>
+                    <img className="noofseats2" src={Profile2} alt="2 user profiles" />
+                    <p className='occupancy2'>6 People</p>
+
+                  </div>
+
+                  <div className="rate-and-buttontorent2">
+
+                    <p className='rate2'>$80.00/ day </p>
+                    <Link to="../register-info">
+                      <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
+                    </Link>
+                  </div>
+                </div>
+              </Link>
+              
+              {/* Car Card 9 */}
+              <Link to="../car-details" >
+                <div className="car32">
+                  <div className='carbrand-part2'>
+
+                    <h4 className='car-brand2'>MG ZS Excite</h4>
+                    <img className='heart' src={Like1} alt="like" />
+
+                  </div>
+                  <p className='car-type2'>HatchBack</p>
+                  <img className="car-cardimage2" src={Car8} alt="Car" />
+
+                  <div className="carspecs2">
+
+                    <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
+                    <p className='fuel2'>90L</p>
+                    <img className="wheel2" src={Steering} alt="Steering Wheel" />
+                    <p className='driving2'>Manual</p>
+                    <img className="noofseats2" src={Profile2} alt="2 user profiles" />
+                    <p className='occupancy2'>4 People</p>
+
+                  </div>
+
+                  <div className="rate-and-buttontorent2">
+
+                    <p className='rate2'>$74.00/ day </p>
+                    <Link to="../register-info">
+                      <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
+                    </Link>
+                  </div>
+                </div>
+              </Link>
             </div>
 
 

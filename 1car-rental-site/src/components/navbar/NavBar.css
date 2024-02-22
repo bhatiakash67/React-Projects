@@ -74,3 +74,9 @@ body {
 .circular-link:hover{
   border: black 2px solid;
 }
+
+@media (max-width: 768px) {
+  .right-content {
+    display: none;
+  }
+}

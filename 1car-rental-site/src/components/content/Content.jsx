@@ -262,37 +262,29 @@ function Content() {
                             {/* Car Card 1 */}
                             <Link to="car-details" >
                                 <div className="car1">
-
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>Koenigsegg</h4>
                                         <img className='heart' src={Like1} alt="like" />
-
                                     </div>
                                     <p className='car-type'>Sport</p>
                                     <img className="car-cardimage" src={Car1} alt="Car" />
-
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>90L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>2 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$99.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
                                         </Link>
                                     </div>
-
                                 </div>
                             </Link>
+                            
                             {/* Car Card 2 */}
                             <Link to="car-details" >
                                 <div className="car2">

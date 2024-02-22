@@ -112,6 +112,8 @@ function Payment() {
 
         <form onSubmit={handleSubmit} className="forms-for-application">
 
+          {/* Left side with all the billing rental and payment info parts */}
+
           <div className="billing-info-part">
 
             {/* Billing info */}
@@ -265,7 +267,7 @@ function Payment() {
 
                   <div className="credit-card-header-and-image">
                     <div className="radio-and-radioheader">
-                      <input className='firstline' name='payment-options' id='radio' checked type="radio" /> <p id='card-radio' className='firstline'>Credit Card</p></div>
+                      <input className='firstline' name='payment-options' id='radio' defaultChecked type="radio" /> <p id='card-radio' className='firstline'>Credit Card</p></div>
                     <img id='visa-visa' className='firstline' src={Visa} alt="visa" />
                   </div>
 
@@ -354,11 +356,11 @@ function Payment() {
                 <button type='submit' ><img id='rent-button-aggrement' src={RentButton} alt="" />
                 </button>
                 {isVisible && (
-            <div id='popupMessage-space'>
-              <p id='popupMessage'>Your booking is confirmed!!!</p>
-            </div>
-          )}
-                </div>
+                  <div id='popupMessage-space'>
+                    <p id='popupMessage'>Your booking is confirmed!!!</p>
+                  </div>
+                )}
+              </div>
 
               <div className="data-surety">
                 <img src={SecurityShield} id='shield-img' alt="shield" />
@@ -369,6 +371,8 @@ function Payment() {
             </div>
 
           </div>
+
+          {/* Rental Summary */}
 
           <div className="rental-summary">
 
