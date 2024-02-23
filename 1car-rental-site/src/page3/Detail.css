@@ -16,23 +16,25 @@ body {
 .content-box2 {
     display: flex;
     flex-direction: row;
-    height: 2016px;
-    width: 1440px;
+    max-height: 2016px;
+    height: auto;
+    max-width: 100%;
     background-color: #F6F7F9;
+    margin-top: 1%;
 }
 
 /* Checklist filter styling */
 
 .filter-for-cars2 {
     background-color: white;
-    width: 360px;
+    width: 25%;
     height: 2016px;
 }
 
 .type-of-car2,
 .car-capacity2,
 .price-range2 {
-    margin-left: 32px;
+    margin-left: 8%;
 }
 
 .type-of-car2 {
@@ -152,28 +154,35 @@ body {
     color: #596780;
 }
 
+/* Car Info */
+
 .main-content-for-user {
     display: flex;
     flex-direction: column;
 }
 
+/* Parent section of images and specs  */
+
 .carcard-elaborate-info {
     display: flex;
     flex-direction: row;
+    width: 100%;
     max-width: 1440px;
     height: 508px;
     margin-top: 32px;
-    margin-left: 32px;
+    margin-left: 3%;
 }
 
+/* Images */
+
 .car-images {
-    width: 492px;
+    width: 45.6%;
     height: 508px;
     background-color: lightgray;
 }
 
 .main-photo {
-    width: 492px;
+    width: 100%;
     height: 360px;
 }
 
@@ -184,7 +193,7 @@ body {
 }
 
 .small-detailed-photos {
-    margin-top: 24px;
+    margin-top: 4.5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -197,7 +206,8 @@ body {
 }
 
 .image {
-    width: 148px;
+    max-width: 148px;
+    width: 100%;
     height: 124px;
     display: block;
     border-radius: 10px;
@@ -220,21 +230,22 @@ body {
     transform: scale(0.9);
 }
 
+/* Car Specs */
+
 .car-details-specs {
     display: flex;
     flex-direction: column;
-    width: 492px;
+    width: 45.4%;
     height: 508px;
     background-color: white;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: 3%;
 }
 
 .car-name-and-rating {
     display: flex;
     flex-direction: row;
-    margin-top: 24px;
-    margin-left: 24px;
+    margin-top: 5%;
+    margin-left: 5%;
     justify-content: space-between;
 }
 
@@ -245,22 +256,22 @@ body {
 }
 
 .like {
-    margin-right: 24px;
+    margin-right: 5%;
     width: 24px;
     height: 24px;
 }
 
 .car-rating {
-    margin-left: 24px;
+    margin-left: 5%;
     margin-top: 8px;
     display: flex;
-    width: 220px;
+    width: 50%;
 }
 
 .review-count {
     font-size: 14px;
     color: #596780;
-    margin-left: 8px;
+    margin-left: 4%;
 }
 
 .car-description {
@@ -269,7 +280,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 32px;
-    margin-left: 24px;
+    margin-left: 5%;
 }
 
 .description {
@@ -278,10 +289,10 @@ body {
 }
 
 .specs {
-    width: 444px;
+    width: 89%;
     height: 72px;
     margin-top: 32px;
-    margin-left: 24px;
+    margin-left: 5%;
 }
 
 .type-and-capacity,
@@ -306,7 +317,6 @@ body {
 }
 
 .details {
-    width: 92px;
     height: 28px;
     font-size: 20px;
     font-weight: bold;
@@ -323,8 +333,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 68px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 32px;
 }
 
@@ -350,10 +360,12 @@ body {
     transform: scale(1.03);
 }
 
+/* Reviews */
+
 .reviews {
     display: flex;
     flex-direction: column;
-    width: 1016px;
+    max-width: 1016px;
     height: 452px;
     margin-top: 32px;
     margin-left: 32px;
@@ -470,6 +482,8 @@ body {
 #arrow-for-reviews {
     margin-left: 8px;
 }
+
+/* Recent Cars section */
 
 .recent-cars {
     display: flex;
@@ -632,6 +646,8 @@ body {
 transform: scale(1.03);
 }
 
+/* Recommended Cars section */
+
 .rmd-cars3 {
     display: flex;
     flex-direction: column;
@@ -652,4 +668,13 @@ transform: scale(1.03);
     margin-top: 10px;
     margin-left: 20px;
     margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .filter-for-cars2 {
+        display: none;
+    }
 }

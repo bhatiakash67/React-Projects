@@ -20,7 +20,7 @@ body {
     gap: 20px;
     border: transparent;
     margin-top: 14px;
-    margin-left: 64px;
+    margin-left: 4.5%;
 }
 
 .ad1,
@@ -49,7 +49,7 @@ body {
 .adheader,
 .adcontent,
 .adbutton {
-    margin-left: 24px;
+    margin-left: 4%;
 }
 
 .adheader {
@@ -61,7 +61,7 @@ body {
 }
 
 .adbutton {
-    width: 120px;
+    width: 20%;
     height: 44px;
     padding: 10px 20px;
     margin-top: 20px;
@@ -141,17 +141,17 @@ body {
 }
 
 .boxheader {
-    margin-left: 48px;
+    margin-left: 10%;
     margin-top: 24px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .location-date-time {
-    margin-top: 16px;
+    margin-top: 2.7%;
 }
 
 .input-headers {
-    width: 486px;
+    /* width: 10%; */
     height: 20px;
     margin-right: 48px;
     margin-left: 48px;
@@ -387,6 +387,15 @@ body {
         margin: 20px auto;
     }
 
+    .ads {
+        margin: 0;
+    }
+
+    .ad1 {
+        width: 85%;
+        margin: 2% auto;
+    }
+
     .ad2 {
         display: none;
     }
@@ -398,18 +407,23 @@ body {
             'swapbtn'
             'dropoff';
         gap: 20px;
+        width: 85%;
+        margin: 0 auto;
     }
 
     .pickup-container,
     .dropoff-container,
     .swapbtn {
         height: 132px;
-        width: 100%;
     }
 
     .swapbtn {
         left: 40%;
         top: 22%;
+    }
+
+    .input-headers {
+        margin-bottom: 1%;
     }
 
     .fullcars {
@@ -424,6 +438,38 @@ body {
 
     .carcount {
         margin-left: 64%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .content-wrapper {
+        margin: 20px auto;
+    }
+
+    .ad1 {
+        width: 95%;
+    }
+
+    .main-container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ad1 {
+        width: 90%;
+        margin: 2% auto;
+    }
+
+    .adbutton {
+        width: 25%;
+    }
+
+    .main-container {
+        width: 90%;
+        margin: 0 auto;
     }
 
 }

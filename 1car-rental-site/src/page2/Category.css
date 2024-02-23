@@ -17,7 +17,7 @@ body {
 .content-box {
     display: flex;
     flex-direction: row;
-    min-height: 1600px;
+    height: 1600px;
     width: 100%;
     margin-top: 1.5%;
 }
@@ -29,7 +29,6 @@ body {
     max-width: 360px;
     width: 25%;
     height: 1600px;
-    border: 1px solid #90A3BF;
 }
 
 .type-of-car,
@@ -256,18 +255,22 @@ form {
 
 .car-cards-catalog {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(304px,  1fr));
+    grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
     gap: 2%;
     max-width: 1026px;
     margin: 0 3%;
 }
 
-.car12, .car22, .car32 {
+.car12,
+.car22,
+.car32 {
     width: 100%;
     background-color: white;
 }
 
-.car12, .car22, .car32 {
+.car12,
+.car22,
+.car32 {
     transition: background-color 0.3s ease;
 }
 
@@ -413,7 +416,7 @@ form {
     position: absolute;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
 
     .main-container2 {
         position: relative;
@@ -422,15 +425,6 @@ form {
         flex-direction: column;
         align-items: center;
     }
-
-    .content-box { 
-        min-height: 1600px;
-    }
-
-.car-cards-catalog{
-    gap: 1%;
-    margin: 3% auto;
-}
 
     .pickup-container2 {
         margin: 10% auto;
@@ -446,7 +440,23 @@ form {
         left: 30%;
     }
 
-    .expand-cars-catalog{
+    .content-box {
+        height: auto;
+    }
+
+    .filter-for-cars {
+        height: auto;
+    }
+
+    .car-cards-catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+        gap: 2%;
+        margin: 2% auto;
+        margin-bottom: 10%;
+    }
+
+    .expand-cars-catalog {
         margin-bottom: 2%;
     }
 }
@@ -466,12 +476,13 @@ form {
     }
 
     .pickup-container2 {
+        width: 100%;
         margin: 3% auto;
     }
 
     .dropoff-container2 {
         margin: 0 auto;
-
+        width: 100%;
     }
 
     .swapbtn2 {
@@ -484,7 +495,11 @@ form {
         width: 100%;
     }
 
-    .main-container2 {
-        width: 100%;
+    .car-cards-catalog {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(304px, 1fr));
+        gap: 2%;
+        margin: 2% auto;
+        margin-bottom: 10%;
     }
 }

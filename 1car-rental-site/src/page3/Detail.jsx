@@ -151,7 +151,7 @@ function Detail() {
                 </div>
               </div>
 
-{/* Car Specs */}
+              {/* Car Specs */}
 
               <div className='car-details-specs'>
 
@@ -188,7 +188,7 @@ function Detail() {
                 <div className="rate-and-rentbutton">
                   <p id="rate-of-car">$80.00/ <span id='day'>days</span></p>
                   <Link to="../register-info">
-                  <img id='button-for-rent' src={RentButton} alt="rent button" />
+                    <img id='button-for-rent' src={RentButton} alt="rent button" />
                   </Link>
                 </div>
 
