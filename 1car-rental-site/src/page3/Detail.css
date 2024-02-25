@@ -16,8 +16,6 @@ body {
 .content-box2 {
     display: flex;
     flex-direction: row;
-    max-height: 2016px;
-    height: auto;
     max-width: 100%;
     background-color: #F6F7F9;
     margin-top: 1%;
@@ -28,7 +26,7 @@ body {
 .filter-for-cars2 {
     background-color: white;
     width: 25%;
-    height: 2016px;
+    height: auto;
 }
 
 .type-of-car2,
@@ -159,6 +157,8 @@ body {
 .main-content-for-user {
     display: flex;
     flex-direction: column;
+    width: 75%;
+    margin-bottom: 2%;
 }
 
 /* Parent section of images and specs  */
@@ -167,7 +167,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 1440px;
+    max-width: 100%;
     height: 508px;
     margin-top: 32px;
     margin-left: 3%;
@@ -177,8 +177,6 @@ body {
 
 .car-images {
     width: 45.6%;
-    height: 508px;
-    background-color: lightgray;
 }
 
 .main-photo {
@@ -236,7 +234,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 45.4%;
-    height: 508px;
     background-color: white;
     margin-left: 3%;
 }
@@ -259,6 +256,11 @@ body {
     margin-right: 5%;
     width: 24px;
     height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.like:hover{
+    transform: scale(1.2);
 }
 
 .car-rating {
@@ -275,15 +277,17 @@ body {
 }
 
 .car-description {
-    width: 444px;
     height: 120px;
     display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
     justify-content: center;
     margin-top: 32px;
-    margin-left: 5%;
 }
 
 .description {
+    display: flex;
+    justify-content: center;
     font-size: 20px;
     color: #596780;
 }
@@ -310,6 +314,7 @@ body {
 .steering-fuel-header {
     color: #90A3BF;
     font-size: 20px;
+    width: 100%;
 }
 
 #typecar {
@@ -325,7 +330,7 @@ body {
 }
 
 #fuelcap {
-    margin-left: 102px;
+    margin-left: 57px;
 }
 
 .rate-and-rentbutton {
@@ -335,7 +340,6 @@ body {
     margin-top: 68px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 32px;
 }
 
 #rate-of-car {
@@ -365,11 +369,10 @@ body {
 .reviews {
     display: flex;
     flex-direction: column;
-    max-width: 1016px;
-    height: 452px;
-    margin-top: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
+    max-width: 94%;
+    width: 100%;
+    height: auto;
+    margin: 3%;
     background-color: white;
 }
 
@@ -395,15 +398,15 @@ body {
 
 .reviewcontent {
     margin-top: 32px;
-    margin-left: 24px;
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
 }
 
 .first-review,
 .second-review {
-    width: 968px;
-    height: 124px;
+    width: 100%;
+    height: auto;
 }
 
 .review-image-and-name-with-title {
@@ -413,14 +416,21 @@ body {
 .reviewer-image {
     width: 56px;
     height: 56px;
-    margin-right: 16px;
+    margin-right: 1.5%;
 }
 
-.name-of-the-reviewer-and-date,
-.job-and-rating {
-    width: 884px;
+.name-title-rating-date {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 2%;
+}
+
+.name-of-the-reviewer-and-job,
+.date-and-rating {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -454,10 +464,10 @@ body {
 .review-words {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
-    margin-top: 12px;
-    width: 896px;
-    margin-left: 74px;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    width: 90%;
+    margin-left: 7.4%;
 }
 
 .review-text {
@@ -488,16 +498,15 @@ body {
 .recent-cars {
     display: flex;
     flex-direction: column;
-    height: 448px;
-    width: 1016px;
-    margin-left: 32px;
-    margin-top: 32px;
+    height: auto;
+    width: 94%;
+    margin-left: 3%;
 }
 
 .popularcar-header3 {
     display: flex;
     justify-content: space-between;
-    width: 1016px;
+    width: 100%;
     height: 44px;
 }
 
@@ -506,7 +515,7 @@ body {
 }
 
 #popularcar-title-text3 {
-    margin-left: 20px;
+    margin-left: 1%;
     font-size: 20px;
     color: #90A3BF;
 }
@@ -518,35 +527,29 @@ body {
 }
 
 .car-cards3 {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1%;
     margin-top: 16px;
-    gap: 32px;
 }
 
-.car1,
-.car2,
-.car3 {
-    width: 317px;
-    height: 388px;
+.recent-car1,
+.recent-car2,
+.recent-car3 {
+    height: 100%;
     background-color: white;
-}
-
-.car1 {
-    display: flex;
-    flex-direction: column;
     transition: background-color 0.3s ease;
 }
 
-.car1:hover {
+.recent-car1:hover {
     background-color: #E0E9F4;
 }
 
-.car2:hover {
+.recent-car2:hover {
     background-color: #E0E9F4;
 }
 
-.car3:hover {
+.recent-car3:hover {
     background-color: #E0E9F4;
 }
 
@@ -562,43 +565,41 @@ body {
 }
 
 .car-brand3 {
-    margin-left: 24px;
-    margin-top: 24px;
-    margin-bottom: 4px;
+    margin-left: 5.5%;
+    margin-top: 5.5%;
+    margin-bottom: 1%;
     font-size: 20px;
     font-weight: bold;
 }
 
 .heart3 {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 35%;
+    right: 5%;
     width: 24px;
     height: 24px;
-    margin-left: 104px;
+    margin-left: 50%;
 }
 
 .car-type3 {
-    margin-left: 24px;
+    margin-left: 6%;
     font-size: 14px;
     font-weight: bold;
     color: #90A3BF;
 }
 
 .car-cardimage3 {
-    width: 232px;
-    height: 72px;
-    margin-top: 64px;
-    margin-left: 36px;
-    margin-right: 36px;
+    width: 55%;
+    height: 18%;
+    margin-top: 18%;
+    margin-left: 20%;
 }
 
 .carspecs3 {
-    height: 24px;
+    height: 6%;
     width: 256px;
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-top: 64px;
+    margin-left: 7%;
+    margin-top: 18%;
 }
 
 .gas-station3,
@@ -625,7 +626,7 @@ body {
 }
 
 .rate-and-buttontorent3 {
-    margin: 24px 24px;
+    margin: 24px;
     display: flex;
     justify-content: space-between;
 }
@@ -642,8 +643,8 @@ body {
     margin-left: 24px;
 }
 
-.rentbutton3:hover{
-transform: scale(1.03);
+.rentbutton3:hover {
+    transform: scale(1.03);
 }
 
 /* Recommended Cars section */
@@ -651,30 +652,74 @@ transform: scale(1.03);
 .rmd-cars3 {
     display: flex;
     flex-direction: column;
-    height: 448px;
-    width: 1016px;
-    margin-left: 32px;
-    margin-top: 32px;
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 3%;
 }
 
-.rmdcars-header3 {
-    display: flex;
-    justify-content: space-between;
-}
-
-.rmdcar-title3 {
-    font-size: 16px;
-    color: #90A3BF;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-
+/* Breakpoints */
 
 @media (max-width: 1200px) {
 
+    .content-box2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .filter-for-cars2 {
         display: none;
+    }
+
+    .main-content-for-user {
+        width: 100%;
+    }
+
+    .carcard-elaborate-info {
+        width: 95%;
+        margin: 3% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .car-images {
+        width: 95%;
+    }
+
+    .car-details-specs {
+        width: 95%;
+    }
+
+    .reviews {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .rate-and-rentbutton{
+        margin-bottom: 3%;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .carcard-elaborate-info{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .car-images{
+        width: 90%;
+    }
+
+    .car-details-specs{
+        width: 99%;
+        margin: 3%;
+    }
+
+    .reviews{
+        margin-top: 0;
     }
 }

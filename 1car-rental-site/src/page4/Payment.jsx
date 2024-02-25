@@ -201,7 +201,7 @@ function Payment() {
               <div className="second-input-line">
                 <div className="input-parts">
                   <p className="input-header">Time</p>
-                  <input className='input-fields arrowdown' type={isTimeInput ? 'time' : 'text'}
+                  <input className='input-fields timer' type={isTimeInput ? 'time' : 'text'}
                     placeholder='Select your time'
                     value={pickupValue.time}
                     onChange={handleTimeChange}
@@ -237,7 +237,7 @@ function Payment() {
               <div className="second-input-line">
                 <div className="input-parts">
                   <p className="input-header">Time</p>
-                  <input className='input-fields arrowdown' type={isDropoffTimeInput ? 'time' : 'text'}
+                  <input className='input-fields timer' type={isDropoffTimeInput ? 'time' : 'text'}
                     placeholder='Select your time'
                     value={dropoffValue.time}
                     onChange={handleDropoffTimeChange}

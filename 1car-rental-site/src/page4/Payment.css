@@ -555,17 +555,62 @@ body {
         flex-direction: column-reverse;
         width: 100%;
         padding: 2%;
-        margin: 0 auto;
+        margin: 2% auto;
     }
 
-    .billing-info-part{
+    .billing-info-part {
         width: auto;
         margin: 0 auto;
     }
 
-    .rental-summary{
+    .rental-summary {
         width: 100%;
-        margin-top: 32px;
-        margin: 32px auto; 
+        margin: auto;
     }
+}
+
+@media (max-width: 900px) {
+
+    .forms-for-application {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 2%;
+        margin: 2% 5%;
+    }
+
+    .billing-info-part {
+        width: 100%;
+        margin: 0 1%;
+    }
+
+    .billing-details,
+    .rental-info,
+    .payment-method,
+    .confirmation {
+        width: 100%;
+    }
+
+    .input-fields {
+        width: 95%;
+    }
+
+    .timer {
+        width: 73%;
+    }
+
+.creditcard-input-parts{
+    width: 100%;
+}
+
+.creditcard-input-fields{
+    width: 95%;
+}
+
+.aggrements{
+    width: 100%;
+}
+
+.aggrement1, .aggrement2{
+    width: 95%;
+}
 }

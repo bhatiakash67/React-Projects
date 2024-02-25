@@ -22,7 +22,6 @@ function Detail() {
     setCurrentImage(newImage === View1 ? BigCar : newImage)
   }
 
-
   return (
 
     <div className='cardetail-content'>
@@ -118,6 +117,8 @@ function Detail() {
 
             <div className="carcard-elaborate-info">
 
+              {/* Car Images */}
+
               <div className="car-images">
 
                 <div className="main-photo">
@@ -125,6 +126,8 @@ function Detail() {
                   <img id='car-big' src={currentImage} alt="big car" />
 
                 </div>
+
+                {/* Small Images */}
 
                 <div className="small-detailed-photos">
 
@@ -158,7 +161,9 @@ function Detail() {
                 <div className="car-name-and-rating">
                   <p className='carname'>Nissan GT-R</p>
 
-                  <img className='like' src={Like1} alt="like" />
+                  {/* Like on click functionality added  */}
+
+                  <img className='like' src={Like1}/>
                 </div>
 
                 <div className="car-rating">
@@ -186,7 +191,7 @@ function Detail() {
                   </div>
                 </div>
                 <div className="rate-and-rentbutton">
-                  <p id="rate-of-car">$80.00/ <span id='day'>days</span></p>
+                  <p id="rate-of-car">$80.00/ <span id='day'>day</span></p>
                   <Link to="../register-info">
                     <img id='button-for-rent' src={RentButton} alt="rent button" />
                   </Link>
@@ -202,66 +207,49 @@ function Detail() {
               <div className="review-header-and-count">
                 <p id='review-header'>Reviews</p> <img id='reviewcount' src={ReviewCount} alt="review count" />
               </div>
-
               <div className="reviewcontent">
-
+                {/* First Review */}
                 <div className="first-review">
-
                   <div className="review-image-and-name-with-title">
-
                     <img className="reviewer-image" src={Profile} alt="profile1" />
-
                     <div className="name-title-rating-date">
 
-                      <div className='name-of-the-reviewer-and-date'><p className='name'> Alex Stanton</p>
-
-                        <p className='date-and-rating'>21 Jan 2024</p>
-
-                      </div>
-
-                      <div className="job-and-rating">
-
+                      <div className='name-of-the-reviewer-and-job'>
+                        <p className='name'> Alex Stanton</p>
                         <p className='reviewer-job'>Manager at NotePost.com </p>
-
-                        <img className='stars' src={ReviewStars} alt="rating 4star" />
-
                       </div>
+                      <div className="date-and-rating">
+                        <p className='date-and-rating'>21 Jan 2024</p>
+                        <img className='stars' src={ReviewStars} alt="rating 4star" />
+                      </div>
+
                     </div>
                   </div>
                   <div className="review-words"><p className='review-text'>I am very happy with the rental service from MORENT. Morent has low prices and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p></div>
-
                 </div>
-
+                {/* Second Review */}
                 <div className="second-review">
-
                   <div className="review-image-and-name-with-title">
-
                     <img className="reviewer-image" src={Profile3} alt="profile1" />
-
                     <div className="name-title-rating-date">
-
-                      <div className='name-of-the-reviewer-and-date'> <p className="name"> Skylar Dias</p>
-
-                        <p className='date-and-rating'>10 Feb 2024</p>
-
+                      <div className='name-of-the-reviewer-and-job'>
+                        <p className='name'> Skylar Dias</p>
+                        <p className='reviewer-job'>Product Manager at LapCare.com </p>
                       </div>
-                      <div className="job-and-rating">
-                        <p className='reviewer-job'>Product Manager at LapCare.com</p>
+                      <div className="date-and-rating">
+                        <p className='date-and-rating'>10 Feb 2024</p>
                         <img className='stars' src={ReviewStars} alt="rating 4star" />
                       </div>
+
                     </div>
                   </div>
                   <div className="review-words"><p className='review-text'>I was greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p></div>
-
                 </div>
-
               </div>
-
               <div className="review-drop-down">
                 Show All
                 <img id="arrow-for-reviews" src={ArrowDownGrey} alt="down arrow" />
               </div>
-
             </div>
 
             {/* Recent Cars */}
@@ -281,7 +269,7 @@ function Detail() {
 
                 {/* Car Card 1 */}
                 <Link to="../car-details" >
-                  <div className="car1">
+                  <div className="recent-car1">
 
                     <div className='carbrand-part3'>
 
@@ -318,7 +306,7 @@ function Detail() {
 
                 <Link to="../car-details" >
 
-                  <div className="car2">
+                  <div className="recent-car2">
 
                     <div className='carbrand-part3'>
 
@@ -354,7 +342,7 @@ function Detail() {
 
                 <Link to="../car-details" >
 
-                  <div className="car3">
+                  <div className="recent-car3">
 
                     <div className='carbrand-part3'>
 
@@ -392,10 +380,10 @@ function Detail() {
 
             <div className="rmd-cars3">
 
-              <div className="rmdcars-header3">
+              <div className='popularcar-header3'>
 
-                <span className='rmdcar-title3' id="rmd-title-text3">Recommened Cars</span>
-                <a className='popularcar-title3' id="popularcar-title-link23" href="#"> View All</a>
+                <span className='popularcar-title3' id="popularcar-title-text3">Recommended Cars</span>
+                <a className='popularcar-title3' id="popularcar-title-link3" href="#"> View All</a>
 
               </div>
 
@@ -404,7 +392,7 @@ function Detail() {
 
                 <Link to="../car-details">
 
-                  <div className="car1">
+                  <div className="recent-car1">
 
                     <div className='carbrand-part3'>
                       <h4 className='car-brand3'>All New Rush</h4>
@@ -438,7 +426,7 @@ function Detail() {
                 {/* Car Card 2 */}
 
                 <Link to="../car-details">
-                  <div className="car2">
+                  <div className="recent-car2">
                     <div className='carbrand-part3'>
 
                       <h4 className='car-brand3'>CR - V</h4>
@@ -470,7 +458,7 @@ function Detail() {
                 </Link>
                 {/* Car Card 3 */}
                 <Link to="../car-details">
-                  <div className="car3">
+                  <div className="recent-car3">
                     <div className='carbrand-part3'>
 
                       <h4 className='car-brand3'>All New Terios</h4>

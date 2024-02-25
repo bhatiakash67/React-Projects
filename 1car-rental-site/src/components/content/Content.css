@@ -110,7 +110,7 @@ body {
     margin-top: 32px;
     margin-bottom: 36px;
     height: 132px;
-    width: 100%;
+    width: 80%;
     background-color: white;
     z-index: 0;
     position: relative;
@@ -144,6 +144,7 @@ body {
     margin-left: 10%;
     margin-top: 24px;
     font-size: 1rem;
+    font-weight: bold;
 }
 
 .location-date-time {
@@ -151,7 +152,6 @@ body {
 }
 
 .input-headers {
-    /* width: 10%; */
     height: 20px;
     margin-right: 48px;
     margin-left: 48px;
@@ -232,6 +232,18 @@ body {
 .car1 {
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+.car1:hover {
+    background-color: #E0E9F4;
+}
+
+.car2:hover {
+    background-color: #E0E9F4;
+}
+
+.car3:hover {
+    background-color: #E0E9F4;
 }
 
 .car4:hover {
@@ -470,6 +482,20 @@ body {
     .main-container {
         width: 90%;
         margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .content-wrapper{
+        width: 100%;
+        margin: 2% auto;
+    }
+
+    .ad1{
+        width: 85%;
+        margin: 2% auto;
     }
 
 }
