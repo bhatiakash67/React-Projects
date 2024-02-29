@@ -163,7 +163,7 @@ function Detail() {
 
                   {/* Like on click functionality added  */}
 
-                  <img className='like' src={Like1}/>
+                  <img className='like' src={Like1} alt='like' />
                 </div>
 
                 <div className="car-rating">
