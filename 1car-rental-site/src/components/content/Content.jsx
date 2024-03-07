@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Content.css"
 import ScrollToTop from '../ScrollToTop'
-import { Car1, Car2, Car3, Car4, Car5, Car6, Car7, Car8, Car9, Switch, ArrowDown, Like2, Like1, Notif1, Notif2, Notif3, GasStation, Profile2, Steering, RentButton, ShowMoreCars, Dislike } from "../../assets/"
+import { Car1, Car2, Car3, Car4, Car5, Car6, Car7, Car8, Car9, Switch, ArrowDown, Like2, Like1, Notif1, Notif2, Notif3, GasStation, Profile2, Steering, RentButton, RentalCarButtonLight, RentalCarButtonDark, ShowMoreCars, Dislike } from "../../assets/"
 
 function Content() {
 
@@ -103,18 +103,28 @@ function Content() {
 
                 <div className='ads'>
                     <div className="ad1">
-                        <h3 className='adheader'>The Best Platform <br /> for Car Rental</h3>
-                        <p className='adcontent'>Ease of doing a car rental safely and reliable. <br /> Of course at a low price.</p>
+
+                        <p id='adheader1'>The Best Platform <br /> for Car Rental</p>
+
+                        <p className='adcontent'>Ease of doing a car rental safely and reliably. <br /> Of course at a low price.</p>
+
                         <Link to="car-categories">
-                            <button className='adbutton'>Rental Car</button>
+                        <button id='rental-ad-btn-1'>
+                            <img src={RentalCarButtonDark} alt="Rent Button" className='ad-button-image' />
+                            </button>
                         </Link>
+
                         <img src={Car1} alt="AD 1" className='ad-image' />
                     </div>
+
                     <div className="ad2">
-                        <h3 className='adheader'>The Best Platform <br /> for Car Rental</h3>
-                        <p className='adcontent'>Ease of doing a car rental safely and reliable. <br /> Of course at a low price.</p>
+                    
+                        <p id='adheader2'>The Best Platform <br /> for Premium Car Rental</p>
+                        <p className='adcontent'>Ease of doing a car rental safely and reliably. <br /> Of course at a low price.</p>
                         <Link to="car-categories">
-                            <button className='adbutton' id='btn2'>Rental Car</button>
+                            <button id='rental-ad-btn-2'>
+                                <img src={RentalCarButtonLight} alt="Rent Button" className='ad-button-image' />
+                            </button>
                         </Link>
                         <img src={Car2} alt="AD 2" className='ad-image' />
                     </div>

@@ -260,7 +260,6 @@ function Payment() {
                 <p className="stepcount">Step 3 of 4</p>
               </div>
 
-
               <div className="credit-card">
 
                 <div className="creditcard-section">
@@ -311,14 +310,14 @@ function Payment() {
                   <div className="paypalradio-and-radio-header">
                     <input className='paypalline' name='payment-options' id='radio-for-paypal' type="radio" /> <p id='paypal-text' className="paypalline">PayPal</p>
                   </div>
-                  <img className='payment-photos' src={PayPal} alt="paypal" />
+                  <img className='payment-photos' id='paypal-paypal' src={PayPal} alt="paypal" />
                 </div>
 
                 <div className="bitcoin">
                   <div className="bitcoinradio-and-radio-header">
                     <input className='bitcoinline' name='payment-options' id='radio-for-bitcoin' type="radio" /> <p id='bitcoin-text' className="bitcoinline">Bitcoin</p>
                   </div>
-                  <img className='payment-photos' src={Bitcoin} alt="bitcoin" />
+                  <img className='payment-photos' id='paypal-paypal' src={Bitcoin} alt="bitcoin" />
                 </div>
 
               </div>

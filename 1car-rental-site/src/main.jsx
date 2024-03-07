@@ -37,16 +37,15 @@ import Content from './components/content/Content.jsx'
 // ])
 
 // 2nd way 
-
 const router = createBrowserRouter(
-createRoutesFromElements(
-  <Route path='/' element = {<Layout />} >
-<Route path='' element = {<Content />}></Route>
-<Route path='car-categories' element = {<Category />}></Route>
-<Route path='car-details' element = {<Detail />}></Route>
-<Route path='register-info' element = {<Payment />}></Route>
-  </Route>
-)
+  createRoutesFromElements(
+    <Route path='/' element={<Layout />} >
+      <Route path='' element={<Content />}></Route>
+      <Route path='car-categories' element={<Category />}></Route>
+      <Route path='car-details' element={<Detail />}></Route>
+      <Route path='register-info' element={<Payment />}></Route>
+    </Route>
+  )
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(

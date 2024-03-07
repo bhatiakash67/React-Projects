@@ -45,6 +45,8 @@ import PayPal from "./paypal.png"
 import Bitcoin from "./bitcoin.png"
 import SecurityShield from "./securityshield.png"
 import CarFinal from "./carfinal.png"
+import RentalCarButtonLight from "./rentalcarbuttonlight.png"
+import RentalCarButtonDark from "./rentalcarbuttondark.png"
 
 export {
     Card1, 
@@ -75,6 +77,8 @@ export {
     Steering,
     GasStation,
     RentButton,
+    RentalCarButtonLight,
+    RentalCarButtonDark,
     ShowMoreCars,
     Dislike,
     TickSquare,

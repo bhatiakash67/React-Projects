@@ -183,7 +183,7 @@ body {
 }
 
 #visa-visa {
-    width: 12%;
+    width: 92px;
     height: 20px;
     margin-top: 24px;
 }
@@ -259,9 +259,17 @@ body {
 
 }
 
-.payment-photos {
-    width: 12%;
+#paypal-paypal {
+    width: 100px;
+    height: 24px;
+}
+
+#bitcoin-bitcoin {
+    width: 94px;
     height: 20px;
+}
+
+.payment-photos {
     margin-top: 16px;
     margin-right: 32px;
 }
@@ -405,6 +413,11 @@ body {
     font-weight: bold;
     color: #1A202C;
     margin-bottom: 8px;
+}
+
+#star-view{
+    width: 108px;
+    height: 20px;
 }
 
 #no-of-reviews {
@@ -598,19 +611,20 @@ body {
         width: 73%;
     }
 
-.creditcard-input-parts{
-    width: 100%;
-}
+    .creditcard-input-parts {
+        width: 100%;
+    }
 
-.creditcard-input-fields{
-    width: 95%;
-}
+    .creditcard-input-fields {
+        width: 95%;
+    }
 
-.aggrements{
-    width: 100%;
-}
+    .aggrements {
+        width: 100%;
+    }
 
-.aggrement1, .aggrement2{
-    width: 95%;
-}
+    .aggrement1,
+    .aggrement2 {
+        width: 95%;
+    }
 }

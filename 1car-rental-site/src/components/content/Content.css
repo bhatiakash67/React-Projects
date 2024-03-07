@@ -46,38 +46,55 @@ body {
     margin-right: 0;
 }
 
-.adheader,
-.adcontent,
-.adbutton {
+.adcontent {
     margin-left: 4%;
 }
 
-.adheader {
+#adheader1{
     margin-top: 24px;
-}
-
-.adcontent {
+    /* TO make the h3 visible */
+    display: block;
     margin-top: 16px;
+    margin-left: 4%;
+    font-size: 32px;
+    font-weight: bold;
 }
 
-.adbutton {
+#adheader2 {
+    margin-top: 24px;
+    /* TO make the h3 visible */
+    display: block;
+    margin-top: 16px;
+    margin-left: 4%;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#rental-ad-btn-1 {
     width: 20%;
     height: 44px;
-    padding: 10px 20px;
     margin-top: 20px;
-    background-color: #3563E9;
+    margin-left: 4%;
     border-radius: 4px;
+    /* TO make the button visible */
+    display: block;
 }
 
-.adbutton:hover {
+#rental-ad-btn-2 {
+    width: 20%;
+    height: 44px;
+    margin-top: 20px;
+    margin-left: 4%;
+    border-radius: 4px;
+    /* TO make the button visible */
+    display: block;
+}
+
+#rental-ad-btn-1:hover {
     transform: scale(1.03);
 }
 
-#btn2 {
-    background-color: #54A6FF;
-}
-
-#btn2:hover {
+#rental-ad-btn-2:hover {
     transform: scale(1.03);
 }
 
@@ -88,8 +105,8 @@ body {
     transform: translateX(-50%);
     margin-bottom: 10px;
     margin-top: 234px;
-    width: 408px;
-    height: 116px;
+    width: 340px;
+    height: 104;
 }
 
 #form-first-page {
@@ -286,8 +303,8 @@ body {
 }
 
 .car-cardimage {
-    width: 232px;
-    height: 72px;
+    width: 204px;
+    height: 64px;
     margin-top: 64px;
     margin-left: 36px;
     margin-right: 36px;
@@ -418,8 +435,8 @@ body {
             'pickup'
             'swapbtn'
             'dropoff';
-        gap: 20px;
-        width: 85%;
+        gap: 40px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -429,9 +446,14 @@ body {
         height: 132px;
     }
 
+    .pickup-container,
+    .dropoff-container{
+        margin: 0 auto;
+    }
+
     .swapbtn {
-        left: 40%;
-        top: 22%;
+        left: 43%;
+        top: 14%;
     }
 
     .input-headers {
