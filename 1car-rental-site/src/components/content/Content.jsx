@@ -1,10 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import "./Content.css"
 import ScrollToTop from '../ScrollToTop'
 import { Car1, Car2, Car3, Car4, Car5, Car6, Car7, Car8, Car9, Switch, ArrowDown, Like2, Like1, Notif1, Notif2, Notif3, GasStation, Profile2, Steering, RentButton, RentalCarButtonLight, RentalCarButtonDark, ShowMoreCars, Dislike } from "../../assets/"
 
 function Content() {
+
+    const [isPickupDateInput, setIsPickupDateInput] = useState(false);
+    const [isPickupTimeInput, setIsPickupTimeInput] = useState(false);
+    const [isDropoffTimeInput, setIsDropoffTimeInput] = useState(false);
+    const [isDropoffDateInput, setIsDropoffDateInput] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -39,9 +44,6 @@ function Content() {
         }));
     }
 
-    const [isPickupDateInput, setIsPickupDateInput] = useState(false);
-    const [isPickupTimeInput, setIsPickupTimeInput] = useState(false);
-
     const handlePickupDateFocus = () => {
         setIsPickupDateInput(true);
     };
@@ -66,8 +68,6 @@ function Content() {
         setPickupValue({ ...pickupValue, time: e.target.value });
     };
 
-    const [isDropoffDateInput, setIsDropoffDateInput] = useState(false);
-
     const handleDropoffDateFocus = () => {
         setIsDropoffDateInput(true);
     };
@@ -79,8 +79,6 @@ function Content() {
     const handleDropoffDateChange = (e) => {
         setDropoffValue({ ...dropoffValue, date: e.target.value });
     };
-
-    const [isDropoffTimeInput, setIsDropoffTimeInput] = useState(false);
 
     const handleDropoffTimeFocus = () => {
         setIsDropoffTimeInput(true);
@@ -109,8 +107,8 @@ function Content() {
                         <p className='adcontent'>Ease of doing a car rental safely and reliably. <br /> Of course at a low price.</p>
 
                         <Link to="car-categories">
-                        <button id='rental-ad-btn-1'>
-                            <img src={RentalCarButtonDark} alt="Rent Button" className='ad-button-image' />
+                            <button id='rental-ad-btn-1'>
+                                <img src={RentalCarButtonDark} alt="Rent Button" className='ad-button-image' />
                             </button>
                         </Link>
 
@@ -118,7 +116,7 @@ function Content() {
                     </div>
 
                     <div className="ad2">
-                    
+
                         <p id='adheader2'>The Best Platform <br /> for Premium Car Rental</p>
                         <p className='adcontent'>Ease of doing a car rental safely and reliably. <br /> Of course at a low price.</p>
                         <Link to="car-categories">
@@ -274,7 +272,8 @@ function Content() {
                                 <div className="car1">
                                     <div className='carbrand-part'>
                                         <h4 className='car-brand'>Koenigsegg</h4>
-                                        <img className='heart' src={Like1} alt="like" />
+                                        <img className='heart'
+                                            src={Like1} alt="like" />
                                     </div>
                                     <p className='car-type'>Sport</p>
                                     <img className="car-cardimage" src={Car1} alt="Car" />
@@ -294,7 +293,7 @@ function Content() {
                                     </div>
                                 </div>
                             </Link>
-                            
+
                             {/* Car Card 2 */}
                             <Link to="car-details" >
                                 <div className="car2">
