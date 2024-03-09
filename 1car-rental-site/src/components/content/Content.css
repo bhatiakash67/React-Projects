@@ -295,6 +295,10 @@ body {
     margin-left: 104px;
 }
 
+.heart:hover{
+    transform: scale(1.2);
+}
+
 .car-type {
     margin-left: 24px;
     font-size: 14px;
