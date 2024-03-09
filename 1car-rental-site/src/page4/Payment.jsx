@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import ScrollToTop from '../components/ScrollToTop'
 import { ArrowDownGrey, Visa, PayPal, Bitcoin, RentButton, SecurityShield, CarFinal, ReviewStars } from '../assets'
 import './Payment.css'
@@ -99,9 +99,13 @@ function Payment() {
   }, [isVisible]);
 
   // Function to handle form submission
+  const navigate = useNavigate()
   const handleSubmit = (e) => {
-
+    e.preventDefault()
     showDiv();
+    setTimeout(() => {
+      navigate('/')
+    }, 2000);
   };
 
   return (
@@ -351,6 +355,7 @@ function Payment() {
                 </div>
               </div>
 
+              {/* Form Submit button  */}
               <div id="rent-button-for-aggrement">
                 <button type='submit' ><img id='rent-button-aggrement' src={RentButton} alt="" />
                 </button>
