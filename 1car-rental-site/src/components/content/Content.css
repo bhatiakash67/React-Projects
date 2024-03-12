@@ -314,12 +314,21 @@ body {
     margin-right: 36px;
 }
 
+/* New margins to adjust the rent button and to accomodate the increased car dimensions */
+.newmargin{
+    margin-top: 45px;
+}
+
+.newmarginrow2{
+    margin-top: 30px;
+}
+
 .carspecs {
     height: 24px;
     width: 256px;
     margin-left: 24px;
     margin-right: 24px;
-    margin-top: 64px;
+    margin-top: 65px;
 }
 
 .gas-station,
@@ -350,6 +359,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     margin: 24px;
+    margin-bottom: 24px;
 }
 
 .rate {

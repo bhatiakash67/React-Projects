@@ -208,12 +208,11 @@ function Category() {
                           onChange={(e) => {
                             setPickupValue({ ...pickupValue, location: e.target.value })
                           }}>
-
-                          <option value="select" hidden>City / State</option>
-                          <option value="location1">New York</option>
-                          <option value="location2">California</option>
-                          <option value="location3">San Diego</option>
-                          <option value="location4">Los Angeles</option>
+                          <option value="" className='options' hidden>Town / City </option>
+                          <option value="location1" className='options'>New York</option>
+                          <option value="location2" className='options'>California</option>
+                          <option value="location3" className='options'>San Diego</option>
+                          <option value="location4" className='options'>Los Angeles</option>
                         </select>
                       </div>
 
@@ -268,12 +267,11 @@ function Category() {
                           onChange={(e) => {
                             setDropoffValue({ ...dropoffValue, location: e.target.value })
                           }}>
-
-                          <option value="select" hidden>City / State</option>
-                          <option value="location1">New York</option>
-                          <option value="location2">California</option>
-                          <option value="location3">San Diego</option>
-                          <option value="location4">Los Angeles</option>
+                          <option value="" className='options' hidden>Town / City </option>
+                          <option value="location1" className='options'>New York</option>
+                          <option value="location2" className='options'>California</option>
+                          <option value="location3" className='options'>San Diego</option>
+                          <option value="location4" className='options'>Los Angeles</option>
                         </select>
                       </div>
 
@@ -298,10 +296,8 @@ function Category() {
                           onChange={handleDropoffTimeChange}
                           onFocus={handleDropoffTimeFocus}
                           onBlur={handleDropoffTimeBlur}
-                          placeholder='Select your time'
-                        />
+                          placeholder='Select your time'/>
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -313,63 +309,46 @@ function Category() {
               {/* Car Card 1 */}
               <Link to="../car-details">
                 <div className="car12">
-
                   <div className='carbrand-part2'>
-
                     <h4 className='car-brand2'>Koenigsegg</h4>
                     <img className='heart2' src={Like1} alt="like" />
-
                   </div>
                   <p className='car-type2'>Sport</p>
-                  <img className="car-cardimage2" src={Car1} alt="Car" />
-
+                  <img className="car-cardimage2" src={Car1} alt="Car" style={{width: '272px', height: '84px', marginTop: '52px', marginBottom: '52px', marginLeft: '22px', marginRight: '23px'}} />
                   <div className="carspecs2">
-
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>90L</p>
                     <img className="wheel2" src={Steering} alt="Steering Wheel" />
                     <p className='driving2'>Manual</p>
                     <img className="noofseats2" src={Profile2} alt="2 user profiles" />
                     <p className='occupancy2'>2 People</p>
-
                   </div>
-
                   <div className="rate-and-buttontorent2">
-
                     <p className='rate2'>$99.00/ day </p>
                     <Link to="../register-info">
                       <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
                     </Link>
                   </div>
-
                 </div>
               </Link>
-
               {/* Car Card 2 */}
               <Link to="../car-details" >
                 <div className="car22">
                   <div className='carbrand-part2'>
-
                     <h4 className='car-brand2'>Nissan GT-R</h4>
                     <img className='heart2' src={Dislike} alt="like" />
-
                   </div>
                   <p className='car-type2'>Sport</p>
-                  <img className="car-cardimage2" src={Car2} alt="Car" />
-
+                  <img className="car-cardimage2" src={Car2} alt="Car" style={{width: '228px', height: '72px', marginTop: '58px', marginBottom: '58px', marginLeft: '44px', marginRight: '45px'}} />
                   <div className="carspecs2">
-
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>80L</p>
                     <img className="wheel2" src={Steering} alt="Steering Wheel" />
                     <p className='driving2'>Manual</p>
                     <img className="noofseats2" src={Profile2} alt="2 user profiles" />
                     <p className='occupancy2'>2 People</p>
-
                   </div>
-
                   <div className="rate-and-buttontorent2">
-
                     <p className='rate2'>$80.00/ day </p>
                     <Link to="../register-info">
                       <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
@@ -377,32 +356,24 @@ function Category() {
                   </div>
                 </div>
               </Link>
-
               {/* Car Card 3 */}
               <Link to="../car-details" >
                 <div className="car32">
                   <div className='carbrand-part2'>
-
                     <h4 className=' car-brand2'>Rolls - Royce</h4>
                     <img className='heart2' src={Like1} alt="like" />
-
                   </div>
                   <p className='car-type2'>Sedan</p>
-                  <img className="car-cardimage2" src={Car3} alt="Car" />
-
+                  <img className="car-cardimage2" src={Car3} alt="Car" style={{width: '244px', height: '76px', marginTop: '56px', marginBottom: '56px', marginLeft: '36px', marginRight: '37px'}} />
                   <div className="carspecs2">
-
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>70L</p>
                     <img className="wheel2" src={Steering} alt="Steering Wheel" />
                     <p className='driving2'>Manual</p>
                     <img className="noofseats2" src={Profile2} alt="2 user profiles" />
                     <p className='occupancy2'>4 People</p>
-
                   </div>
-
                   <div className="rate-and-buttontorent2">
-
                     <p className='rate2'>$96.00/ day </p>
                     <Link to="../register-info">
                       <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
@@ -410,66 +381,49 @@ function Category() {
                   </div>
                 </div>
               </Link>
-
               {/* Car Card 4 */}
               <Link to="../car-details">
                 <div className="car12">
-
                   <div className='carbrand-part2'>
                     <h4 className='car-brand2'>All New Rush</h4>
                     <img className='heart2' src={Like1} alt="like" />
                   </div>
                   <p className='car-type2'>SUV</p>
-                  <img className="car-cardimage2" src={Car4} alt="Car" />
-
+                  <img className="car-cardimage2" src={Car4} alt="Car" style={{width: '252px', height: '112px', marginTop: '30px', marginLeft: '33px', marginRight: '34px'}} />
                   <div className="carspecs2">
-
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>70L</p>
                     <img className="wheel2" src={Steering} alt="Steering Wheel" />
                     <p className='driving2'>Manual</p>
                     <img className="noofseats2" src={Profile2} alt="2 user profiles" />
                     <p className='occupancy2'>6  People</p>
-
                   </div>
-
                   <div className="rate-and-buttontorent2">
-
                     <p className='rate2'>$72.00/ day </p>
                     <Link to="../register-info">
                       <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
                     </Link>
                   </div>
-
                 </div>
               </Link>
-
               {/* Car Card 5 */}
-
               <Link to="../car-details">
                 <div className="car22">
                   <div className='carbrand-part2'>
-
                     <h4 className='car-brand2'>CR - V</h4>
                     <img className='heart2' src={Dislike} alt="like" />
-
                   </div>
                   <p className='car-type2'>SUV</p>
-                  <img className="car-cardimage2" src={Car5} alt="Car" />
-
+                  <img className="car-cardimage2" src={Car5} alt="Car" style={{width: '254px', height: '102px', marginTop: '43px', marginLeft: '33px', marginRight: '32px'}} />
                   <div className="carspecs2">
-
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>80L</p>
                     <img className="wheel2" src={Steering} alt="Steering Wheel" />
                     <p className='driving2'>Manual</p>
                     <img className="noofseats2" src={Profile2} alt="2 user profiles" />
                     <p className='occupancy2'>6  People</p>
-
                   </div>
-
                   <div className="rate-and-buttontorent2">
-
                     <p className='rate2'>$80.00/ day </p>
                     <Link to="../register-info">
                       <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
@@ -477,32 +431,24 @@ function Category() {
                   </div>
                 </div>
               </Link>
-
               {/* Car Card 6 */}
               <Link to="../car-details">
                 <div className="car32">
                   <div className='carbrand-part2'>
-
                     <h4 className='car-brand2'>All New Terios</h4>
                     <img className='heart2' src={Like1} alt="like" />
-
                   </div>
                   <p className='car-type2'>SUV</p>
-                  <img className="car-cardimage2" src={Car6} alt="Car" />
-
+                  <img className="car-cardimage2" src={Car6} alt="Car" style={{width: '252px', height: '112px', marginTop: '38px', marginLeft: '34px', marginRight: '33px'}} />
                   <div className="carspecs2">
-
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>90L</p>
                     <img className="wheel2" src={Steering} alt="Steering Wheel" />
                     <p className='driving2'>Manual</p>
                     <img className="noofseats2" src={Profile2} alt="2 user profiles" />
                     <p className='occupancy2'>6 People</p>
-
                   </div>
-
                   <div className="rate-and-buttontorent2">
-
                     <p className='rate2'>$74.00/ day </p>
                     <Link to="../register-info">
                       <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
@@ -510,66 +456,49 @@ function Category() {
                   </div>
                 </div>
               </Link>
-
               {/* Car Card 7 */}
               <Link to="../car-details" >
                 <div className="car12">
-
                   <div className='carbrand-part2'>
-
                     <h4 className='car-brand2'>MG ZX </h4>
                     <img className='heart2' src={Like1} alt="like" />
-
                   </div>
                   <p className='car-type2'>Hatchback</p>
-                  <img className="car-cardimage2" src={Car8} alt="Car" />
-
+                  <img className="car-cardimage2" src={Car8} alt="Car" style={{width: '264px', height: '108px', marginTop: '30px', marginLeft: '28px'}} />
                   <div className="carspecs2">
-
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>70L</p>
                     <img className="wheel2" src={Steering} alt="Steering Wheel" />
                     <p className='driving2'>Manual</p>
                     <img className="noofseats2" src={Profile2} alt="2 user profiles" />
                     <p className='occupancy2'>4 People</p>
-
                   </div>
-
                   <div className="rate-and-buttontorent2">
-
                     <p className='rate2'>$76.00/ day </p>
                     <Link to="../register-info">
                       <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
                     </Link>
                   </div>
-
                 </div>
               </Link>
               {/* Car Card 8 */}
               <Link to="../car-details" >
                 <div className="car22">
                   <div className='carbrand-part2'>
-
                     <h4 className='car-brand2'>New MG ZS</h4>
                     <img className='heart2' src={Dislike} alt="like" />
-
                   </div>
                   <p className='car-type2'>SUV</p>
-                  <img className="car-cardimage2" src={Car9} alt="Car" />
-
+                  <img className="car-cardimage2" src={Car9} alt="Car" style={{width: '308px', height: '120px', marginTop: '20px', marginLeft: '0px'}} />
                   <div className="carspecs2">
-
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>80L</p>
                     <img className="wheel2" src={Steering} alt="Steering Wheel" />
                     <p className='driving2'>Manual</p>
                     <img className="noofseats2" src={Profile2} alt="2 user profiles" />
                     <p className='occupancy2'>6 People</p>
-
                   </div>
-
                   <div className="rate-and-buttontorent2">
-
                     <p className='rate2'>$80.00/ day </p>
                     <Link to="../register-info">
                       <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
@@ -577,32 +506,24 @@ function Category() {
                   </div>
                 </div>
               </Link>
-              
               {/* Car Card 9 */}
               <Link to="../car-details" >
                 <div className="car32">
                   <div className='carbrand-part2'>
-
                     <h4 className='car-brand2'>MG ZS Excite</h4>
                     <img className='heart' src={Like1} alt="like" />
-
                   </div>
                   <p className='car-type2'>HatchBack</p>
-                  <img className="car-cardimage2" src={Car8} alt="Car" />
-
+                  <img className="car-cardimage2" src={Car8} alt="Car" style={{width: '264px', height: '108px', marginTop: '35px', marginLeft: '28px'}} />
                   <div className="carspecs2">
-
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>90L</p>
                     <img className="wheel2" src={Steering} alt="Steering Wheel" />
                     <p className='driving2'>Manual</p>
                     <img className="noofseats2" src={Profile2} alt="2 user profiles" />
                     <p className='occupancy2'>4 People</p>
-
                   </div>
-
                   <div className="rate-and-buttontorent2">
-
                     <p className='rate2'>$74.00/ day </p>
                     <Link to="../register-info">
                       <button className='rentbutton2'><img src={RentButton} alt="Rent Button" /></button>
@@ -611,8 +532,6 @@ function Category() {
                 </div>
               </Link>
             </div>
-
-
             <div className="expand-cars-catalog">
               <img id='catalog-opener' src={ShowMoreCars} alt="button to show more cars" />
               <p id='catalog-car-count'> 120 Cars</p>

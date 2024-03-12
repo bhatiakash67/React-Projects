@@ -263,7 +263,10 @@ form {
 
 .car12,
 .car22,
-.car32 {
+.car32{
+    width: 100%;
+    height: 388px;
+    background-color: white;
     transition: background-color 0.3s ease;
 }
 
@@ -386,7 +389,7 @@ form {
 .expand-cars-catalog {
     display: flex;
     justify-content: center;
-    margin-top: 6%;
+    margin-top: 15%;
     position: relative;
 }
 

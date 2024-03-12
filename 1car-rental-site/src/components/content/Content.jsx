@@ -149,13 +149,12 @@ function Content() {
                                             onChange={(e) => {
                                                 setPickupValue({ ...pickupValue, location: e.target.value })
                                             }}>
-
-                                            <option value="select" hidden>City / State</option>
-                                            <option value="location1">Location 1</option>
-                                            <option value="location2">Location 2</option>
-                                            <option value="location3">Location 3</option>
-                                            <option value="location4">Location 4</option>
-                                        </select>
+                                            <option value="" className='options' hidden>Town / City </option>
+                                            <option value="location1" className='options'>New York</option>
+                                            <option value="location2" className='options'>California</option>
+                                            <option value="location3" className='options'>San Diego</option>
+                                            <option value="location4" className='options'>Los Angeles</option>
+                                          </select>
                                     </div>
 
                                     <div className="date">
@@ -210,13 +209,12 @@ function Content() {
                                             onChange={(e) => {
                                                 setDropoffValue({ ...dropoffValue, location: e.target.value })
                                             }}>
-
-                                            <option value="select" hidden>City / State</option>
-                                            <option value="location1">Location 1</option>
-                                            <option value="location2">Location 2</option>
-                                            <option value="location3">Location 3</option>
-                                            <option value="location4">Location 4</option>
-                                        </select>
+                                            <option value="" className='options' hidden>Town / City </option>
+                                            <option value="location1" className='options'>New York</option>
+                                            <option value="location2" className='options'>California</option>
+                                            <option value="location3" className='options'>San Diego</option>
+                                            <option value="location4" className='options'>Los Angeles</option>
+                                          </select>
                                     </div>
 
                                     <div className="date">
@@ -264,9 +262,7 @@ function Content() {
                         </div>
 
                         {/* Car Cards */}
-
                         <div className="carcards">
-
                             {/* Car Card 1 */}
                             <Link to="car-details" >
                                 <div className="car1">
@@ -276,7 +272,7 @@ function Content() {
                                             src={Like1} alt="like" />
                                     </div>
                                     <p className='car-type'>Sport</p>
-                                    <img className="car-cardimage" src={Car1} alt="Car" />
+                                    <img className="car-cardimage" src={Car1} alt="Car" style={{width: '232px', height: '72px'}} />
                                     <div className="carspecs">
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>90L</p>
@@ -286,39 +282,31 @@ function Content() {
                                         <p className='occupancy'>2 People</p>
                                     </div>
                                     <div className="rate-and-buttontorent">
-                                        <p className='rate'>$99.00/ day </p>
+                                        <p className='rate'>$99.00/ day</p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
                                         </Link>
                                     </div>
                                 </div>
                             </Link>
-
                             {/* Car Card 2 */}
                             <Link to="car-details" >
                                 <div className="car2">
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>Nissan GT-R</h4>
                                         <img className='heart' src={Dislike} alt="like" />
-
                                     </div>
                                     <p className='car-type'>Sport</p>
-                                    <img className="car-cardimage" src={Car2} alt="Car" />
-
+                                    <img className="car-cardimage" src={Car2} alt="Car" style={{width: '204px', height: '64px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>80L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>2 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$80.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
@@ -330,27 +318,20 @@ function Content() {
                             <Link to="car-details" >
                                 <div className="car3">
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>Rolls - Royce</h4>
                                         <img className='heart' src={Like1} alt="like" />
-
                                     </div>
                                     <p className='car-type'>Sedan</p>
-                                    <img className="car-cardimage" src={Car3} alt="Car" />
-
+                                    <img className="car-cardimage" src={Car3} alt="Car" style={{width: '220px', height: '68px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>70L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>4 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$96.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
@@ -362,27 +343,20 @@ function Content() {
                             <Link to="car-details" >
                                 <div className="car4">
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>Nissan GT-R</h4>
                                         <img className='heart' src={Dislike} alt="like" />
-
                                     </div>
                                     <p className='car-type'>Sport</p>
-                                    <img className="car-cardimage" src={Car2} alt="Car" />
-
+                                    <img className="car-cardimage" src={Car2} alt="Car" style={{width: '204px', height: '64px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>80L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>2 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$80.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
@@ -392,73 +366,55 @@ function Content() {
                             </Link>
                         </div>
                     </div>
-
                     {/* Recommended Cars Card */}
-
                     <div className="rmd-cars">
-
                         <div className="rmdcars-header">
                             <span className='rmdcar-title' id="rmd-title-text">Recommened Cars</span>
                         </div>
-
                         {/* Car Card 1 */}
                         <div className="carcards">
                             <Link to="car-details">
                                 <div className="car1">
-
                                     <div className='carbrand-part'>
                                         <h4 className='car-brand'>All New Rush</h4>
                                         <img className='heart' src={Like1} alt="like" />
                                     </div>
                                     <p className='car-type'>SUV</p>
-                                    <img className="car-cardimage" src={Car4} alt="Car" />
-
+                                    <img className="car-cardimage newmargin" src={Car4} alt="Car" style={{width: '224px', height: '100px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>70L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>6  People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$72.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
                                         </Link>
                                     </div>
-
                                 </div>
                             </Link>
                             {/* Car Card 2 */}
                             <Link to="car-details">
                                 <div className="car2">
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>CR - V</h4>
                                         <img className='heart' src={Dislike} alt="like" />
-
                                     </div>
                                     <p className='car-type'>SUV</p>
-                                    <img className="car-cardimage" src={Car5} alt="Car" />
-
+                                    <img className="car-cardimage newmargin" src={Car5} alt="Car" style={{width: '248px', height: '100px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>80L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>6  People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$80.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
@@ -470,27 +426,20 @@ function Content() {
                             <Link to="car-details">
                                 <div className="car3">
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>All New Terios</h4>
                                         <img className='heart' src={Like1} alt="like" />
-
                                     </div>
                                     <p className='car-type'>SUV</p>
-                                    <img className="car-cardimage" src={Car6} alt="Car" />
-
+                                    <img className="car-cardimage newmargin" src={Car6} alt="Car" style={{width: '224px', height: '100px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>90L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>6 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$74.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
@@ -502,27 +451,20 @@ function Content() {
                             <Link to="car-details">
                                 <div className="car4">
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>CR - V</h4>
                                         <img className='heart' src={Dislike} alt="like" />
-
                                     </div>
                                     <p className='car-type'>SUV</p>
-                                    <img className="car-cardimage" src={Car7} alt="Car" />
-
+                                    <img className="car-cardimage newmargin" src={Car7} alt="Car" style={{width: '248px', height: '100px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>80L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>6 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$80.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
@@ -531,67 +473,50 @@ function Content() {
                                 </div>
                             </Link>
                         </div>
-
                         {/* Car Card 5 */}
                         <div className="carcards">
                             <Link to="car-details" >
                                 <div className="car1">
-
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>MG ZX </h4>
                                         <img className='heart' src={Like1} alt="like" />
-
                                     </div>
                                     <p className='car-type'>Hatchback</p>
-                                    <img className="car-cardimage" src={Car8} alt="Car" />
-
+                                    <img className="car-cardimage newmarginrow2" src={Car8} alt="Car" style={{width: '264px', height: '108px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>70L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>4 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$76.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
                                         </Link>
                                     </div>
-
                                 </div>
                             </Link>
                             {/* Car Card 6 */}
                             <Link to="car-details" >
                                 <div className="car2">
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>New MG ZS</h4>
                                         <img className='heart' src={Dislike} alt="like" />
-
                                     </div>
                                     <p className='car-type'>SUV</p>
-                                    <img className="car-cardimage" src={Car9} alt="Car" />
-
+                                    <img className="car-cardimage newmarginrow2" src={Car9} alt="Car" style={{width: '264px', height: '112px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>80L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>6 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$80.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
@@ -603,27 +528,20 @@ function Content() {
                             <Link to="car-details" >
                                 <div className="car3">
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>MG ZS Excite</h4>
                                         <img className='heart' src={Like1} alt="like" />
-
                                     </div>
                                     <p className='car-type'>HatchBack</p>
-                                    <img className="car-cardimage" src={Car8} alt="Car" />
-
+                                    <img className="car-cardimage newmarginrow2" src={Car8} alt="Car" style={{width: '264px', height: '108px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>90L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>4 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$74.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
@@ -635,27 +553,20 @@ function Content() {
                             <Link to="car-details" >
                                 <div className="car4">
                                     <div className='carbrand-part'>
-
                                         <h4 className='car-brand'>New MG ZS</h4>
                                         <img className='heart' src={Dislike} alt="like" />
-
                                     </div>
                                     <p className='car-type'>SUV</p>
-                                    <img className="car-cardimage" src={Car9} alt="Car" />
-
+                                    <img className="car-cardimage newmarginrow2" src={Car9} alt="Car" style={{width: '264px', height: '112px'}} />
                                     <div className="carspecs">
-
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>80L</p>
                                         <img className="wheel" src={Steering} alt="Steering Wheel" />
                                         <p className='driving'>Manual</p>
                                         <img className="noofseats" src={Profile2} alt="2 user profiles" />
                                         <p className='occupancy'>6 People</p>
-
                                     </div>
-
                                     <div className="rate-and-buttontorent">
-
                                         <p className='rate'>$80.00/ day </p>
                                         <Link to="register-info">
                                             <button className='rentbutton'><img src={RentButton} alt="Rent Button" /></button>
@@ -666,7 +577,6 @@ function Content() {
                         </div>
                     </div>
                 </div>
-
                 <div className='fullcars'>
                     <Link to="car-categories">
                         <button><img className="showcars" src={ShowMoreCars} alt="" /></button>
