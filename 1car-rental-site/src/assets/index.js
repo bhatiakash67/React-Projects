@@ -47,6 +47,7 @@ import SecurityShield from "./securityshield.png"
 import CarFinal from "./carfinal.png"
 import RentalCarButtonLight from "./rentalcarbuttonlight.png"
 import RentalCarButtonDark from "./rentalcarbuttondark.png"
+import ProfileSelf from "./profileself.jpg"
 
 export {
     Card1, 
@@ -97,5 +98,6 @@ export {
     PayPal,
     Bitcoin,
     SecurityShield,
-    CarFinal
+    CarFinal,
+    ProfileSelf
 }

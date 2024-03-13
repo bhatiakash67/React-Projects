@@ -297,7 +297,7 @@ function Content() {
                                         <img className='heart' src={Dislike} alt="like" />
                                     </div>
                                     <p className='car-type'>Sport</p>
-                                    <img className="car-cardimage" src={Car2} alt="Car" style={{width: '204px', height: '64px'}} />
+                                    <img className="car-cardimage" src={Car2} alt="Car" style={{width: '204px', height: '64px', marginTop: '73px'}} />
                                     <div className="carspecs">
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>80L</p>
@@ -322,7 +322,7 @@ function Content() {
                                         <img className='heart' src={Like1} alt="like" />
                                     </div>
                                     <p className='car-type'>Sedan</p>
-                                    <img className="car-cardimage" src={Car3} alt="Car" style={{width: '220px', height: '68px'}} />
+                                    <img className="car-cardimage" src={Car3} alt="Car" style={{width: '220px', height: '68px', marginTop: '70px'}} />
                                     <div className="carspecs">
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>70L</p>
@@ -347,7 +347,7 @@ function Content() {
                                         <img className='heart' src={Dislike} alt="like" />
                                     </div>
                                     <p className='car-type'>Sport</p>
-                                    <img className="car-cardimage" src={Car2} alt="Car" style={{width: '204px', height: '64px'}} />
+                                    <img className="car-cardimage" src={Car2} alt="Car" style={{width: '204px', height: '64px', marginTop: '74px'}} />
                                     <div className="carspecs">
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>80L</p>
@@ -482,7 +482,7 @@ function Content() {
                                         <img className='heart' src={Like1} alt="like" />
                                     </div>
                                     <p className='car-type'>Hatchback</p>
-                                    <img className="car-cardimage newmarginrow2" src={Car8} alt="Car" style={{width: '264px', height: '108px'}} />
+                                    <img className="car-cardimage newmarginrow2" src={Car8} alt="Car" style={{width: '264px', height: '108px', marginTop: '34px'}} />
                                     <div className="carspecs">
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>70L</p>
@@ -507,7 +507,7 @@ function Content() {
                                         <img className='heart' src={Dislike} alt="like" />
                                     </div>
                                     <p className='car-type'>SUV</p>
-                                    <img className="car-cardimage newmarginrow2" src={Car9} alt="Car" style={{width: '264px', height: '112px'}} />
+                                    <img className="car-cardimage newmarginrow2" src={Car9} alt="Car" style={{width: '264px', height: '112px', marginTop: '30px'}} />
                                     <div className="carspecs">
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>80L</p>
@@ -532,7 +532,7 @@ function Content() {
                                         <img className='heart' src={Like1} alt="like" />
                                     </div>
                                     <p className='car-type'>HatchBack</p>
-                                    <img className="car-cardimage newmarginrow2" src={Car8} alt="Car" style={{width: '264px', height: '108px'}} />
+                                    <img className="car-cardimage newmarginrow2" src={Car8} alt="Car" style={{width: '264px', height: '108px', marginTop: '35px'}} />
                                     <div className="carspecs">
                                         <img className="gas-station" src={GasStation} alt="Petrol Tank" />
                                         <p className='fuel'>90L</p>

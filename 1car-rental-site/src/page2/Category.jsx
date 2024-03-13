@@ -339,7 +339,7 @@ function Category() {
                     <img className='heart2' src={Dislike} alt="like" />
                   </div>
                   <p className='car-type2'>Sport</p>
-                  <img className="car-cardimage2" src={Car2} alt="Car" style={{width: '228px', height: '72px', marginTop: '58px', marginBottom: '58px', marginLeft: '44px', marginRight: '45px'}} />
+                  <img className="car-cardimage2" src={Car2} alt="Car" style={{width: '228px', height: '72px', marginTop: '63px', marginLeft: '44px', marginRight: '45px'}} />
                   <div className="carspecs2">
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>80L</p>
@@ -364,7 +364,7 @@ function Category() {
                     <img className='heart2' src={Like1} alt="like" />
                   </div>
                   <p className='car-type2'>Sedan</p>
-                  <img className="car-cardimage2" src={Car3} alt="Car" style={{width: '244px', height: '76px', marginTop: '56px', marginBottom: '56px', marginLeft: '36px', marginRight: '37px'}} />
+                  <img className="car-cardimage2" src={Car3} alt="Car" style={{width: '244px', height: '76px', marginTop: '58px',marginLeft: '36px', marginRight: '37px'}} />
                   <div className="carspecs2">
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>70L</p>
@@ -389,7 +389,7 @@ function Category() {
                     <img className='heart2' src={Like1} alt="like" />
                   </div>
                   <p className='car-type2'>SUV</p>
-                  <img className="car-cardimage2" src={Car4} alt="Car" style={{width: '252px', height: '112px', marginTop: '30px', marginLeft: '33px', marginRight: '34px'}} />
+                  <img className="car-cardimage2" src={Car4} alt="Car" style={{width: '252px', height: '112px', marginTop: '30px', marginLeft: '33px'}} />
                   <div className="carspecs2">
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>70L</p>
@@ -414,7 +414,7 @@ function Category() {
                     <img className='heart2' src={Dislike} alt="like" />
                   </div>
                   <p className='car-type2'>SUV</p>
-                  <img className="car-cardimage2" src={Car5} alt="Car" style={{width: '254px', height: '102px', marginTop: '43px', marginLeft: '33px', marginRight: '32px'}} />
+                  <img className="car-cardimage2" src={Car5} alt="Car" style={{width: '254px', height: '102px', marginTop: '40px', marginLeft: '33px', marginRight: '32px'}} />
                   <div className="carspecs2">
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>80L</p>
@@ -439,7 +439,7 @@ function Category() {
                     <img className='heart2' src={Like1} alt="like" />
                   </div>
                   <p className='car-type2'>SUV</p>
-                  <img className="car-cardimage2" src={Car6} alt="Car" style={{width: '252px', height: '112px', marginTop: '38px', marginLeft: '34px', marginRight: '33px'}} />
+                  <img className="car-cardimage2" src={Car6} alt="Car" style={{width: '252px', height: '112px', marginTop: '30px', marginLeft: '34px', marginRight: '33px'}} />
                   <div className="carspecs2">
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>90L</p>
@@ -464,7 +464,7 @@ function Category() {
                     <img className='heart2' src={Like1} alt="like" />
                   </div>
                   <p className='car-type2'>Hatchback</p>
-                  <img className="car-cardimage2" src={Car8} alt="Car" style={{width: '264px', height: '108px', marginTop: '30px', marginLeft: '28px'}} />
+                  <img className="car-cardimage2" src={Car8} alt="Car" style={{width: '264px', height: '108px', marginTop: '35px', marginLeft: '28px'}} />
                   <div className="carspecs2">
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>70L</p>
@@ -489,7 +489,7 @@ function Category() {
                     <img className='heart2' src={Dislike} alt="like" />
                   </div>
                   <p className='car-type2'>SUV</p>
-                  <img className="car-cardimage2" src={Car9} alt="Car" style={{width: '308px', height: '120px', marginTop: '20px', marginLeft: '0px'}} />
+                  <img className="car-cardimage2" src={Car9} alt="Car" style={{width: '308px', height: '120px', marginTop: '22px', marginLeft: '0px'}} />
                   <div className="carspecs2">
                     <img className="gas-station2" src={GasStation} alt="Petrol Tank" />
                     <p className='fuel2'>80L</p>
